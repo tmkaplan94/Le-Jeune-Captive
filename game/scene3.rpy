@@ -1,47 +1,4 @@
 ##################################################
-# Characters
-##################################################
-
-# main cast and their variations
-define Jean = Character("Jean")
-define Ciel = Character("Ciel")
-define Claude = Character("Claude")
-
-# side characters
-define question_marks = Character("???")
-define Agitated_Protester = Character("Agitated Protester")
-define Frustrated_Youth = Character("Frustrated Youth")
-define Downtrodden_Worker = Character("Downtrodden Worker")
-define Disgruntled_Worker = Character("Disgruntled Worker")
-define Young_Parisian_Lieutenant = Character("Young Parisian Lieutenant")
-define Angry_Young_Parisian = Character("Angry Young Parisian")
-define Frustrated_Young_Parisian = Character("Frustrated Young Parisian")
-define Mousat = Character("Mousat")
-define Wounded_Protester = Character("Wounded Protester")
-define Frustrated_Protester = Character("Frustrated Protester")
-define Helpful_Agitator = Character("Helpful Agitator")
-
-##################################################
-# Images
-##################################################
-
-# backgrounds
-image bg champs_elysees = "champs-elysees.jpg"
-
-# main characters and their variations
-image Jean = "macaron.jpg"
-image Ciel = "Ciel Base.png"
-image Claude = "macaron.jpg"
-
-# side characters
-image Agitated_Protester = "fondue.jpg"
-image Frustrated_Youth = "fondue.jpg"
-image Downtrodden_Worker = "fondue.jpg"
-image Disgruntled_Worker = "fondue.jpg"
-image Young_Parisian_Lieutenant = "fondue.jpg"
-
-
-##################################################
 # Scene 3: The Pigs Arrive
 ##################################################
 

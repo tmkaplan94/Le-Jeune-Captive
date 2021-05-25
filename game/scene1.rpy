@@ -1,34 +1,4 @@
 ﻿##################################################
-# Characters
-##################################################
-
-# main cast and their variations
-define Jean = Character("Jean")
-define Moody_Medic = Character("Moody Medic")
-define nvl_narrator = Character("", kind=nvl)
-
-# side characters
-define Worried_Protester = Character("Worried Protester")
-define Dehydrated_Protester = Character("Dehydrated Protester")
-
-##################################################
-# Images
-##################################################
-
-# backgrounds
-image bg champs_elysees = "champs-elysees.jpg"
-
-# main characters and their variations
-image Jean = "macaron.jpg"
-image Moody_Medic = "macaron.jpg"
-image Jean flip = im.Flip("macaron.jpg", horizontal="True")
-
-# side characters
-image Worried_Protester = "fondue.jpg"
-image Dehydrated_Protester = "fondue.jpg"
-
-
-##################################################
 # Scene 1: First Aid
 ##################################################
 
@@ -92,7 +62,7 @@ label scene1:
 
     Worried_Protester "Fine, fin-- Wha!"
 
-    show Dehydrated_Protestor at left with moveinleft
+    show Dehydrated_Protester at left with moveinleft
     show Worried_Protester at center with move
 
     Dehydrated_Protester "Hey Jean, I...I don’t feel s--"

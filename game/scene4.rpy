@@ -1,30 +1,4 @@
 ##################################################
-# Characters
-##################################################
-
-# main cast and their variations
-define Jean = Character("Jean")
-define Claude = Character("Claude")
-
-# side characters
-define Young_Parisian_Lieutenant = Character("Young Parisian Lieutenant")
-define Newscaster = Character("Newscaster")
-
-##################################################
-# Images
-##################################################
-
-# backgrounds
-image bg champs_elysees = "champs-elysees.jpg"
-
-# main characters and their variations
-image Jean = "macaron.jpg"
-image Claude = "macaron.jpg"
-
-# side characters
-image Young_Parisian_Lieutenant = "fondue.jpg"
-
-##################################################
 # Scene 4: Beaten
 ##################################################
 

@@ -1,42 +1,4 @@
 ##################################################
-# Characters
-##################################################
-
-# main cast and their variations
-define Jean = Character("Jean")
-define Ciel = Character("Ciel")
-define Radiant_Redhead = Character("Radiant Redhead")
-define Claude = Character("Claude")
-define Rambunctious_Ragamuffin = Character("Rambunctious Ragamuffin")
-
-# side characters
-define question_marks = Character("???")
-define Agitated_Protester = Character("Agitated Protester")
-define Frustrated_Youth = Character("Frustrated Youth")
-define Downtrodden_Worker = Character("Downtrodden Worker")
-define Disgruntled_Worker = Character("Disgruntled Worker")
-
-##################################################
-# Images
-##################################################
-
-# backgrounds
-image bg champs_elysees = "champs-elysees.jpg"
-
-# main characters and their variations
-image Jean = "macaron.jpg"
-image Ciel = "Ciel Base.png"
-image Radiant_Redhead = "Ciel Base.png"
-image Claude = "macaron.jpg"
-image Rambunctious_Ragamuffin = "macaron.jpg"
-
-# side characters
-image Agitated_Protester = "fondue.jpg"
-image Frustrated_Youth = "fondue.jpg"
-image Downtrodden_Worker = "fondue.jpg"
-image Disgruntled_Worker = "fondue.jpg"
-
-##################################################
 # Scene 2: Take Back What is Ours
 ##################################################
 
