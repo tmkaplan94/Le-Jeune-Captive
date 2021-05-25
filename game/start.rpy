@@ -38,26 +38,27 @@ image bg start Paris = "bg start Paris.jpg"
 image bg champs_elysees = "champs-elysees.jpg"
 
 # main characters and their variations
-image Jean = "macaron.jpg"
-image Moody_Medic = "macaron.jpg"
-image Jean flip = im.Flip("macaron.jpg", horizontal="True")
+image Jean = "Jean Base.png"
+image Moody_Medic = "Jean Base.png"
+image Jean flip = im.Flip("Jean Base.png", horizontal="True")
 image Ciel = "Ciel Base.png"
 image Radiant_Redhead = "Ciel Base.png"
+image Ciel_Dress = "Ciel Dress.png"
 image Claude = "macaron.jpg"
 image Rambunctious_Ragamuffin = "macaron.jpg"
 
 # side characters
-image Worried_Protester = "fondue.jpg"
-image Dehydrated_Protester = "fondue.jpg"
-image Agitated_Protester = "fondue.jpg"
-image Frustrated_Youth = "fondue.jpg"
-image Downtrodden_Worker = "fondue.jpg"
-image Disgruntled_Worker = "fondue.jpg"
-image Agitated_Protester = "fondue.jpg"
-image Frustrated_Youth = "fondue.jpg"
-image Downtrodden_Worker = "fondue.jpg"
-image Disgruntled_Worker = "fondue.jpg"
-image Young_Parisian_Lieutenant = "fondue.jpg"
+image Worried_Protester = "npc.png"
+image Dehydrated_Protester = "npc.png"
+image Agitated_Protester = "npc.png"
+image Frustrated_Youth = "npc.png"
+image Downtrodden_Worker = "npc.png"
+image Disgruntled_Worker = "npc.png"
+image Agitated_Protester = "npc.png"
+image Frustrated_Youth = "npc.png"
+image Downtrodden_Worker = "npc.png"
+image Disgruntled_Worker = "npc.png"
+image Young_Parisian_Lieutenant = "npc.png"
 
 
 ## Start of Game
