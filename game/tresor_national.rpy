@@ -1,16 +1,16 @@
 
 screen transaction():
     imagemap:
-        ground "champs-elysees.jpg"
-        hover "champs-elysees.jpg"
+        ground "bg transaction.jpg"
+        hover "bg transaction2.jpg"
         if seal_there:
-            hotspot (315, 272, 275, 185) clicked Jump("seal_found")
+            hotspot (858, 92, 242, 178) clicked Jump("seal_found")
         if scratches_there:
-            hotspot (315, 272, 275, 185) clicked Jump("scratches_found")
+            hotspot (1017, 418, 168, 106) clicked Jump("scratches_found")
         if amount_there:
-            hotspot (315, 272, 275, 185) clicked Jump("amount_found")
+            hotspot (333, 369, 285, 54) clicked Jump("amount_found")
         if date_there:
-            hotspot (315, 272, 275, 185) clicked Jump("date_found")
+            hotspot (260, 258, 304, 48) clicked Jump("date_found")
 
 init python:
     seal_there = True
@@ -207,7 +207,7 @@ label continue_restaurant:
 
     Ciel "Ah... I just remembered. It happened last week, I think?"
 
-    Claude "Perhaps the mimosas got to you. The news said you made the transaction yesterday."
+    Claude "Today is the 20th, no? Perhaps the mimosas got to you. The news said you made the transaction yesterday."
 
     Jean "Ciel, it isn’t like you to forget something as important as this. This was one of the things you dreamed of. You would’ve told me immediately about this."
 
@@ -236,9 +236,6 @@ label continue_restaurant:
     Claude "What is the matter? Call the good lady! Maybe put in a good word for me…?"
 
     Jean "Of course not."
-
-    hide Jean
-    show Jean_flip at right
 
     Jean "Excuse me, can we get some water?"
 
@@ -297,7 +294,7 @@ label continue_restaurant:
 
     Claude "I have decided. At 2, we meet at the treasury!"
 
-    Jean "The terminal is accessible throughout the day. We don’t even have to break into anywhere."
+    Jean "The terminal is accessible throughout the day for government officials. We don’t even have to break into anywhere."
 
     Claude "But where’s the drama in that?! Come mon ami, let us live a little."
 
@@ -413,8 +410,8 @@ label continue_restaurant:
 
     "*stomp stomp*"
 
-    show Jean at left with moveinright
-    show Claude at right with moveinright
+    show Claude at right with moveinleft
+    show Jean at left with moveinleft
 
     Jean "Alright, we reached the terminal. We should be able to find the transaction history in here."
 
@@ -492,6 +489,10 @@ label date_found:
     jump treasury_search
 
 label transaction_done:
+
+    scene bg inside_tresor with fade
+    show Jean at left with dissolve
+    show Claude at right with dissolve
 
     Jean "Some of these things don’t line up..."
 
@@ -693,13 +694,9 @@ label decode_success:
 
     Jean "Enough of that! That makes absolutely no sense."
 
-    show Claude at center with move
-
     Jean "Seal, seal… Blast! And we were so close too..."
 
     Claude "Uhh, mon ami… Look what’s happening."
-
-    show Claude at right with dissolve
 
     Jean "What-"
 
@@ -710,6 +707,8 @@ label decode_success:
     Claude "Did I do something wrong? I just clicked on the seal of the prime minister..."
 
     Jean "Maybe you accidentally did something very right. Look! Among all the gibberish, there’s a set of numbers. 49°07'14.7''N 2°05'52.6''E… Those look like coordinates or something."
+
+    scene bg inside_tresor with fade
 
     show Jean at left with dissolve
     show Claude at right with dissolve
@@ -724,7 +723,7 @@ label decode_success:
 
     Claude "C'est compris. Ah, wait. There’s a security guard. Wait here."
 
-    hide Claude with moveoutright
+    hide Claude with moveoutleft
 
     Claude "Thank you my good friend! We got lots of work done thanks to you!"
 
@@ -733,8 +732,8 @@ label decode_success:
     # New scene
 
     scene bg car with fade
-    show Claude at right with dissolve
-    show Jean at left with dissolve
+    show Claude at left with dissolve
+    show Jean at right with dissolve
 
     Claude "Never gonna give you up, never gonna let you down, never gonna-"
 
@@ -771,7 +770,7 @@ label decode_success:
 
     Claude "This thing is massive..."
 
-    Jean "And old. It looks like it’s going to fall apart any second."
+    Jean "It's so out of place. Why did the coordinates lead here?"
 
     Claude "Alright what’s in-"
 

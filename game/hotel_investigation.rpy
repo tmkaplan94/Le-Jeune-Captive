@@ -1,17 +1,17 @@
 screen hotel_room():
     imagemap:
-        ground "champs-elysees.jpg"
-        hover "champs-elysees.jpg"
+        ground "HotelRoomWithItems.png"
+        hover "HotelRoomWithItemsHighlighted.png"
         if camera_there:
-            hotspot (315, 272, 275, 185) clicked Jump("hotel_camera")
+            hotspot (477, 536, 156, 102) clicked Jump("hotel_camera")
         if notepad_there:
-            hotspot (315, 272, 275, 185) clicked Jump("hotel_notepad")
+            hotspot (745, 566, 136, 91) clicked Jump("hotel_notepad")
         if receipts_there:
-            hotspot (315, 272, 275, 185) clicked Jump("hotel_receipts")
+            hotspot (1013, 587, 170, 109) clicked Jump("hotel_receipts")
         if drawer_there:
-            hotspot (315, 272, 275, 185) clicked Jump("hotel_drawer")
+            hotspot (247, 506, 44, 53) clicked Jump("hotel_drawer")
         if laptop_there:
-            hotspot (315, 272, 275, 185) clicked Jump("hotel_laptop")
+            hotspot (152, 396, 144, 106) clicked Jump("hotel_laptop")
 
 init python:
     camera_there = True

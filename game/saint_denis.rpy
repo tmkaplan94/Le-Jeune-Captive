@@ -1,13 +1,13 @@
 screen poll_office():
     imagemap:
-        ground "champs-elysees.jpg"
-        hover "champs-elysees.jpg"
+        ground "pollOffice.jpg"
+        hover "pollOfficeHighlighted.jpg"
         if box_there:
-            hotspot (315, 272, 275, 185) clicked Jump("saint_denis_empty_box")
+            hotspot (1095, 393, 184, 312) clicked Jump("saint_denis_empty_box")
         if trash_there:
-            hotspot (315, 272, 275, 185) clicked Jump("saint_denis_trash")
+            hotspot (432, 456, 118, 155) clicked Jump("saint_denis_trash")
         if ballots_there:
-            hotspot (315, 272, 275, 185) clicked Jump("saint_denis_suspicious_ballots")
+            hotspot (391, 198, 171, 157) clicked Jump("saint_denis_suspicious_ballots")
 
 init python:
     box_there = True
