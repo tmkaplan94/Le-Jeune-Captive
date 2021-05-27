@@ -10,6 +10,7 @@ define Radiant_Redhead = Character("Radiant Redhead")
 define Claude = Character("Claude")
 define Rambunctious_Ragamuffin = Character("Rambunctious Ragamuffin")
 define nvl_narrator = Character("", kind=nvl)
+define Both = Character("Both")
 
 # side characters
 define question_marks = Character("???")
@@ -27,6 +28,10 @@ define Wounded_Protester = Character("Wounded Protester")
 define Frustrated_Protester = Character("Frustrated Protester")
 define Helpful_Agitator = Character("Helpful Agitator")
 define Newscaster = Character("Newscaster")
+define Politician = Character("Politician")
+define Business_Person = Character("Business Person")
+define Gaston = Character("Gaston")
+define Guard = Character("Guard")
 
 
 ##################################################
@@ -36,6 +41,27 @@ define Newscaster = Character("Newscaster")
 # backgrounds
 image bg start Paris = "bg start Paris.jpg"
 image bg champs_elysees = "champs-elysees.jpg"
+image bg office = "bg office.jpg"
+image bg cafe = "bg cafe.jpg"
+image bg cafe2 = "bg cafe2.jpg"
+image bg tresor_national = "bg tresor_national.jpg"
+image bg tresor_door = "bg tresor_door.jpg"
+image bg inside_tresor = "bg inside_tresor.jpg"
+image bg transaction = "bg transaction.jpg"
+image bg morse1 = "morse1.jpg"
+image bg morse2 = "morse2.jpg"
+image bg morse3 = "morse3.jpg"
+image bg morse4 = "morse4.jpg"
+image bg encrypted = "bg encrypted.jpg"
+image bg car = "bg car.jpg"
+image bg hangar = "bg hangar.jpg"
+image bg tanks = "bg tanks.jpg"
+image HotelLobby = "HotelLobby.JPG"
+image HotelHallway = "HotelHallway.jpg"
+image HotelOutside = "HotelOutside.jpg"
+image HotelRoomMap = "HotelRoomMap.png"
+image alley = "alley1.jpg"
+image poll office = "pollOffice.jpg"
 
 # main characters and their variations
 image Jean = "Jean Base.png"
@@ -45,6 +71,7 @@ image Ciel = "Ciel Base.png"
 image Radiant_Redhead = "Ciel Base.png"
 image Ciel_Dress = "Ciel Dress.png"
 image Claude = "macaron.jpg"
+image Claude_flip = im.Flip("macaron.jpg", horizontal="True")
 image Rambunctious_Ragamuffin = "macaron.jpg"
 
 # side characters
@@ -59,6 +86,8 @@ image Frustrated_Youth = "npc.png"
 image Downtrodden_Worker = "npc.png"
 image Disgruntled_Worker = "npc.png"
 image Young_Parisian_Lieutenant = "npc.png"
+image Gaston = "npc.png"
+image Guard = "npc.png"
 
 
 ## Start of Game
@@ -88,6 +117,15 @@ label start:
 
         "Palais Bourbon Investigation":
             jump palais_bourbon
+
+        "Tresor Nationale Investigation":
+            jump tresor_nationale
+
+        "Hotel Investigation":
+            jump hotel
+
+        "Saint-Denis Election Investigation":
+            jump saint_denis
 
 
     return
