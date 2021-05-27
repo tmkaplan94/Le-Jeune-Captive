@@ -188,60 +188,83 @@ label palaisb_claude:
     jump palaisb_coffice
 
 label palaisb_coffice:
-
     scene ciel office
     Jean "(Here we are. Now… where to look?)"
+    python:
+        desk = False
+        painting = False
+        poster = False
+        documents = False
 
     ## replace this when imagemap is done
     jump palaisb_pc
 
 label palaisb_desktop:
 
-Jean "(Ciel’s computer, I don’t know what her password is though. Ah, there’s a password hint.)"
+    Jean "(Ciel’s computer, I don’t know what her password is though. Ah, there’s a password hint. \"4 digits, a special day.\")"
 
-Jean "(\"4 digits, a special day.\")"
+    jump palaisb_password
 
 label palaisb_password:
-#PLAYER CHOICE
-#>0130
-#Jean "(January 30th… Let’s give it a shot. … No dice.)"
-jump palaisb_password
-#>0512
-#Jean "(Let’s try my birthday. … It worked! I suppose this is one way of showing love.)"
-jump palaisb_documents
-#>0901
-#Jean "(Let’s try her birthday. … Nope, didn’t think so.)"
-jump palaisb_password
-#>1214
-#Jean "(Our wedding day, maybe? … Nope.)"
-jump palaisb_password
-#>EXIT
-#Jean "(Maybe something around her office will help me.)"
+    menu:
+        "0130" if desk:
+            Jean "(January 30th… Let’s give it a shot. … No dice.)"
+            jump palaisb_password
+        "0512" if photo:
+            Jean "(Let’s try my birthday. … Nope.)"
+            jump palaisb_password
+        "0901" if painting:
+            Jean "(Let’s try her birthday. … It was really that easy.)"
+            jump palaisb_documents
+        "1214"if poster:
+            Jean "(Our wedding day, maybe? … Nope.)"
+            jump palaisb_password
+        "EXIT":
+            Jean "(Maybe something around her office will help me.)"
+            #imagemap jump here I think
 
 label palaisb_desk:
-Jean "(Hmm… There’s mostly just old memos in her desk compartments…)"
+    Jean "(Hmm… There’s mostly just old memos in her desk compartments…)"
 
-Jean "(Oh? What’s this?)."
+    Jean "(Oh? What’s this?)."
 
-Jean "(A crumpled sticky note. \"January 30th, usual place, come alone.\")"
+    Jean "(A crumpled sticky note. \"January 30th, usual place, come alone.\")"
 
-Jean "..."
+    Jean "..."
+
+    $ desk = True
+
+    #imagemap jump here I think
 
 label palaisb_photo:
 
-Jean "(It’s a photo of our wedding day... December 14th. I’ll never forget the sight of her in that wedding dress.)"
+    Jean "(It’s a photo of our wedding day... December 14th. I’ll never forget the sight of her in that wedding dress.)"
 
-label palaisb_calendar:
+    $ photo = True
 
-Jean "(It’s one of those calendars you can buy down in Chinatown. Damn, she’s got tons of stuff scribbled on here. Hm? This one has a circle around it.)"
+    #imagemap jump here I think
 
-Jean "(May 12th. My birthday.)"
+label palaisb_painting:
+
+    Jean "(It's a painting we bought on our trip to Spain.)"
+
+    Jean "(When I told her I always wanted to go there I didn't think she'd book us a vacation for my birthday.)"
+
+    Jean "(Hmm... My birthday... May 12th.)"
+
+    $ painting = True
+
+    #imagemap jump here I think
 
 label palaisb_poster:
 
-Jean "(This poster… Claude gave it to Ciel on her birthday a few years ago. I half expected her to to roll it up and smack him upside the head with it. Instead she just started laughing so hard tears started coming out.)"
+    Jean "(This poster… Claude gave it to Ciel on her birthday a few years ago. I half expected her to to roll it up and smack him upside the head with it. Instead she just started laughing so hard tears started coming out.)"
 
-Jean "(Maybe her birthday is the password? September 1st. Nah, it couldn’t be that simple… Could it?)"
+    Jean "(Maybe her birthday is the password? September 1st. Nah, it couldn’t be that simple… Could it?)"
+
+    $ poster = True
+
+    #imagemap jump here I think
 
 
 label palaisb_documents:
@@ -331,7 +354,7 @@ label palaisb_end:
 
         Jean "(That felt… almost too easy. It’s almost like Ciel wanted me to find it.)"
 
-        Jean "(Seriously, my birthday as the pin, all of the evidence into one obvious folder, and all of it intact? Not to mention that they all should have been deleted.)"
+        Jean "(Seriously, her birthday as the pin, all of the evidence into one obvious folder, and all of it intact? Not to mention that they all should have been deleted.)"
 
         Jean "(That woman is simply unfathomable.)"
 
