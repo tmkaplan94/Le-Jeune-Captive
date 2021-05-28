@@ -123,6 +123,19 @@ label start:
         "Scene 4: Beaten":
             jump scene4
 
+        "Investigations":
+            jump investigations
+
+        "Ending":
+            jump ending
+
+    return
+
+label investigations:
+
+    menu:
+        "Investigations"
+
         "Palais Bourbon Investigation":
             jump palais_bourbon
 
@@ -135,5 +148,7 @@ label start:
         "Saint-Denis Election Investigation":
             jump saint_denis
 
+        "Go Back":
+            jump start
 
     return
