@@ -138,6 +138,9 @@ label scene_select:
         "Scene 5: First Impressions":
             jump scene5
 
+        "Scene 6: Mon Canari":
+            jump scene6
+
         "Investigations":
             jump investigations
 
@@ -146,8 +149,6 @@ label scene_select:
 
         "Main Menu":
             jump start
-
-    return
 
 label investigations:
 
@@ -169,4 +170,4 @@ label investigations:
         "Go Back":
             jump scene_select
 
-    return
+return
