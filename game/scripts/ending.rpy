@@ -15,7 +15,6 @@ label ending:
     show Ciel_Dress at center
     show Jean flip at right with dissolve
 
-
     Jean "Every month a new film comes out and every month you make excuses not to go with me. Do you not remember the joy we once had at the cinemas?"
 
     Ciel "… I do."

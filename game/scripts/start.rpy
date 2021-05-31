@@ -49,6 +49,7 @@ image bg safehouse = "Safehouse.jpg"
 image bg office = "bg office.jpg"
 image bg cafe = "bg cafe.jpg"
 image bg cafe2 = "bg cafe2.jpg"
+image bg university = "University.jpg"
 image bg tresor_national = "bg tresor_national.jpg"
 image bg tresor_door = "bg tresor_door.jpg"
 image bg inside_tresor = "bg inside_tresor.jpg"
@@ -81,6 +82,7 @@ image Jean = "Jean Base.png"
 image Moody_Medic = "Jean Base.png"
 image Jean flip = im.Flip("Jean Base.png", horizontal="True")
 image Ciel = "Ciel Base.png"
+image Ciel flip = im.Flip("Ciel Base.png", horizontal="True")
 image Radiant_Redhead = "Ciel Base.png"
 image Ciel_Dress = "Ciel Dress.png"
 image Ciel_dress flip = im.Flip("Ciel Dress.png", horizontal="True")
@@ -132,6 +134,9 @@ label scene_select:
 
         "Scene 4: Beaten":
             jump scene4
+
+        "Scene 5: First Impressions":
+            jump scene5
 
         "Investigations":
             jump investigations
