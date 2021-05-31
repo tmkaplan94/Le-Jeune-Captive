@@ -77,6 +77,7 @@ image bg LeGrandRoi protest = "bg LeGrandRoi protest.jpg"
 image bg LeGrandRoi front = "bg LeGrandRoi front.jpg"
 image bg LeGrandRoi riot1 = "bg LeGrandRoi riot1.jpg"
 image bg LeGrandRoi riot2 = "bg LeGrandRoi riot2.jpg"
+image bg black = "bg black.jpg"
 
 # main characters and their variations
 image Jean = "Jean Base.png"
@@ -87,8 +88,8 @@ image Ciel flip = im.Flip("Ciel Base.png", horizontal="True")
 image Radiant_Redhead = "Ciel Base.png"
 image Ciel_Dress = "Ciel Dress.png"
 image Ciel_dress flip = im.Flip("Ciel Dress.png", horizontal="True")
-image Claude = "macaron.jpg"
-image Claude_flip = im.Flip("macaron.jpg", horizontal="True")
+image Claude = "Claude Base.png"
+image Claude_flip = im.Flip("Claude Base.png", horizontal="True")
 image Rambunctious_Ragamuffin = "macaron.jpg"
 
 # side characters

@@ -3,11 +3,13 @@
 ##################################################
 label scene5:
 
+    scene bg black with None
+
     Jean "Hmm..."
 
     Jean "It was winter last year, just after midterms. I was enjoying some well-earned solitude at the local cafe when she first approached me..."
 
-    scene bg cafe with None
+    scene bg cafe with fade
     show Ciel flip at left with dissolve
     show Jean flip at right with dissolve
 
@@ -33,6 +35,10 @@ label scene5:
 
     Claude "They did see each other at the cafe, yes. And that might have been where they stared longingly into each other's eyes and felt the sting of cupid arrows, but...That is not where you met, is it Jean?"
 
+    #hide Jean with dissolve
+    #hide Ciel with dissolve
+    scene bg black with None
+
     Jean "...It wasn't worth explaining."
 
     Claude "Oh, I think you are wrong there, mon ami. You cannot skip over the best part of the story!"
@@ -44,10 +50,6 @@ label scene5:
     Jean "Ugh, is it too late to change my mind?"
 
     Claude "Far. Now, we will need to rewind a bit from the cafe...Same day, but in the afternoon. I had just finished flunking my last exam of the semester, and I was looking for some...companionship, yeah?"
-
-    hide Jean
-    hide Ciel
-    scene bg university with None
 
     Jean "A girl. He was looking for a hook up. Pathetically."
 
@@ -109,6 +111,7 @@ label scene5:
 
     Claude "After the rally, everyone milled around and enjoyed the pizza. I took the opportunity to approach Ciel and give her my regards. We were having a lovely little conversation, when a certain wet napkin made his way over..."
 
+    scene bg university with fade
     show Ciel flip at left with dissolve
     show Claude at center with dissolve
 
@@ -116,7 +119,7 @@ label scene5:
 
     Ciel "Oh, but I don't believe I could do it justice. You'll have to read it for yourself. It's a truly excellent wo--"
 
-    show Jean flip at right with dissolve
+    show Jean flip at right with moveinright
 
     Jean "Claude, come on. The lady is clearly not interested. Let's get out of here before they start raising up barricades."
 
@@ -218,9 +221,11 @@ label scene5:
 
     Jean "... ... ..."
 
+    show Jean at right
+
     Jean "I'm leaving, Claude."
 
-    hide Jean
+    hide Jean with moveoutright
 
     Claude "Hey, hold on, mon ami! You can't just walk away like that!"
 
@@ -256,8 +261,8 @@ label scene5:
 
     Ciel "I'll be here. Now go!"
 
-    hide Claude
-    hide Ciel
+    hide Claude with dissolve
+    hide Ciel with dissolve
 
 ##################################################
 # End Scene

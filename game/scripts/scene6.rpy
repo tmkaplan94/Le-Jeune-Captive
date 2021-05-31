@@ -3,10 +3,10 @@
 ##################################################
 label scene6:
 
-    # scene apartment
-    show Jean at left with dissolve
-    show Claude at center with dissolve
-    show Young_Parisian_Lieutenant at right with dissolve
+    scene bg safehouse with fade
+    show Young_Parisian_Lieutenant flip at left
+    show Jean at center
+    show Claude at right
 
     Claude "And that is the *real* first time Jean met Ciel."
 
@@ -32,17 +32,17 @@ label scene6:
 
     Jean "Right, right. It was nothing much, just the name of a local cafe, and a time. It was just after finals, and I didn’t have anything else to do, so I went. Against my better judgment…"
 
+    hide Jean with dissolve
+    hide Claude with dissolve
+
     scene bg cafe with None
-    hide Jean
-    hide Claude
+    show Jean at left with dissolve
 
-    nvl_narrator "*bells jingle*"
+    "*bells jingle*"
 
-    show Ciel at right with dissolve
+    show Ciel at right with moveinright
 
     Ciel "Ah, there you are Monsieur Hobier! Come, come. Join me."
-
-    show Jean at left with dissolve
 
     Jean "You don’t seem surprised to see me."
 
@@ -420,8 +420,8 @@ label scene6:
 
     Ciel "Ah, that is where you are mistaken, mon canari. I never leave the warpath. But that is a talk for another day, eh? Enough business. Tell me about your taste in women…"
 
-    hide Jean
-    hide Ciel
+    hide Jean with dissolve
+    hide Ciel with dissolve
 
 ##################################################
 # End Scene
