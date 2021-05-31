@@ -34,6 +34,7 @@ define Gaston = Character("Gaston")
 define Guard = Character("Guard")
 define Security_Guard = Character("Security Guard")
 define Police_Chief = Character("Police Chief")
+define Shady_Statesman = Character("Shady Statesman")
 
 
 ##################################################
@@ -102,11 +103,14 @@ image Frustrated_Youth = "npc.png"
 image Downtrodden_Worker = "npc.png"
 image Disgruntled_Worker = "npc.png"
 image Young_Parisian_Lieutenant = "npc.png"
+image Young_Parisian_Lieutenant flip = im.Flip("npc.png", horizontal="True")
 image Gaston = "npc.png"
 image Guard = "npc.png"
 image Security_Guard = "npc.png"
 image Police_Chief = "npc.png"
 image Police_Chief flip = im.Flip("npc.png", horizontal="True")
+image Shady_Statesman = "npc.png"
+image Shady_Statesman flip = im.Flip("npc.png", horizontal="True")
 
 
 label start:
@@ -119,9 +123,6 @@ label scene_select:
 
     menu:
         "Scene Selection"
-
-        "New Game":
-            jump scene1
 
         "Scene 1: First Aid":
             jump scene1
@@ -141,14 +142,15 @@ label scene_select:
         "Scene 6: Mon Canari":
             jump scene6
 
+        "Scene 7: Revolution Sans Revolution":
+            jump scene7
+
         "Investigations":
             jump investigations
 
         "Ending":
             jump ending
 
-        "Main Menu":
-            jump start
 
 label investigations:
 
@@ -166,8 +168,5 @@ label investigations:
 
         "Saint-Denis Election Investigation":
             jump saint_denis
-
-        "Go Back":
-            jump scene_select
 
 return
