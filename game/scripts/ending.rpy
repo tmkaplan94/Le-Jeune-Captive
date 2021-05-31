@@ -8,12 +8,12 @@ label ending:
 
     "DD Month, YYYY - walking to Le Grand Roi"
 
-    show Ciel_Dress at right with dissolve
+    show Ciel_Dress at right with moveinright
 
     Ciel "I still can’t believe I let you talk me into this."
 
-    show Ciel_Dress at center
-    show Jean flip at right with dissolve
+    show Ciel_Dress at center with moveoutleft
+    show Jean flip at right with moveinright
 
     Jean "Every month a new film comes out and every month you make excuses not to go with me. Do you not remember the joy we once had at the cinemas?"
 
@@ -23,8 +23,8 @@ label ending:
 
     Ciel "Of course I do my love, just…"
 
-    show Ciel_Dress at left
-    show Jean flip at center
+    show Ciel_Dress at left with moveinright
+    show Jean flip at center with moveinright
 
     Ciel "not on a night like tonight."
 
@@ -36,19 +36,21 @@ label ending:
 
     Ciel "It’s nothing, I just want tonight to be special, that’s all… and these films bore me half to death!"
 
-    hide Ciel_Dress with dissolve
-    show Jean flip at left
+    hide Ciel_Dress with moveoutleft
+    show Jean flip at left with moveoutleft
 
     Jean "Hmm..."
 
-    hide Jean flip with dissolve
+    hide Jean flip with moveoutleft
 
-    scene bg LeGrandRoi protest with Pause(3)
-    scene bg LeGrandRoi front with None
-    show Ciel_Dress at center with dissolve
-    show Jean flip at right with dissolve
+    scene bg LeGrandRoi protest with Pause(2)
+    scene bg LeGrandRoi front with fade
+    show Ciel_Dress at center with moveinright
+    show Jean flip at right with moveinright
 
     Ciel "No no, why are they protesting here?"
+
+    show Ciel_Dress flip at center
 
     Ciel "Let’s skip the film tonight."
 
@@ -60,28 +62,28 @@ label ending:
 
     Jean "I just don’t understand why they’re protesting. After everything we’ve fought for, everything we’ve struggled to achieve… we should be on the same side."
 
-    Ciel "We once were, fighting for the same thing. But now it seems, I’ve lost my way."
+    show Ciel_Dress at center
+
+    Ciel "We once were... fighting for the same thing. But now it seems I’ve lost my way."
 
     Jean "Seriously Ciel, what’s wrong?"
 
-    hide Ciel_Dress
-    hide Jean flip
-    scene bg LeGrandRoi riot1 with None
+    scene bg LeGrandRoi riot1 with fade
 
     Ciel "It wasn’t supposed to end like this."
 
-    Jean "Wow, you were right about the escalation, huh Ciel? Wait, they sent a riot squad?"
+    Jean "Wow, you were right about the escalation, huh Ciel? Wait, they sent a riot squad??"
 
-    scene bg LeGrandRoi riot2 with None
+    scene bg LeGrandRoi riot2 with fade
 
-    Ciel "Jean, quick, I must tell you something."
+    Ciel "Jean, quick, I must tell you something!"
 
     Jean "Ciel, we have to stop this!"
 
     Ciel "No wait!"
 
     show Police_Chief flip at left with dissolve
-    show Jean flip at right with dissolve
+    show Jean flip at right with moveinright
 
     Jean "Stop immediately! I am Jean Hobier, a member of The Council. I am ordering you to stop this at once!"
 
@@ -89,16 +91,16 @@ label ending:
 
     Police_Chief "...by ANY and ALL means necessary."
 
-    Jean "What are you saying! On whose authority?"
+    Jean "What are you saying! On whose authority!?"
 
     Police_Chief "Ciel Rousseau, now please step aside unless you would like to join them!"
 
-    hide Police_Chief flip
-    hide Jean flip
+    show Jean at right
+    hide Jean with moveoutright
 
-    scene bg LeGrandRoi front with None
+    scene bg LeGrandRoi front with fade
     show Ciel_Dress at center
-    show Jean at left with dissolve
+    show Jean at left with moveinleft
 
     menu:
         "Confront":
@@ -106,8 +108,6 @@ label ending:
 
         "Console":
             jump console_dialogue
-
-
 
 label confront_dialogue:
 

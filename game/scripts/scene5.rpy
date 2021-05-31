@@ -3,15 +3,15 @@
 ##################################################
 label scene5:
 
-    scene bg black with None
+    scene bg black with fade
 
     Jean "Hmm..."
 
     Jean "It was winter last year, just after midterms. I was enjoying some well-earned solitude at the local cafe when she first approached me..."
 
     scene bg cafe with fade
-    show Ciel flip at left with dissolve
-    show Jean flip at right with dissolve
+    show Ciel flip at left
+    show Jean flip at right
 
     Jean "I had seen her around the university before, of course, but never spoke--"
 
@@ -35,9 +35,7 @@ label scene5:
 
     Claude "They did see each other at the cafe, yes. And that might have been where they stared longingly into each other's eyes and felt the sting of cupid arrows, but...That is not where you met, is it Jean?"
 
-    #hide Jean with dissolve
-    #hide Ciel with dissolve
-    scene bg black with None
+    scene bg black with fade
 
     Jean "...It wasn't worth explaining."
 
@@ -112,8 +110,8 @@ label scene5:
     Claude "After the rally, everyone milled around and enjoyed the pizza. I took the opportunity to approach Ciel and give her my regards. We were having a lovely little conversation, when a certain wet napkin made his way over..."
 
     scene bg university with fade
-    show Ciel flip at left with dissolve
-    show Claude at center with dissolve
+    show Ciel flip at left
+    show Claude at center
 
     Claude "No, I have not had the pleasure of reading his work. You will have to enlighten me sometime. Perhaps at dinner...?"
 
@@ -123,21 +121,28 @@ label scene5:
 
     Jean "Claude, come on. The lady is clearly not interested. Let's get out of here before they start raising up barricades."
 
+    show Claude flip at center
+
     Claude "Barricades? To keep us in?"
 
     Jean "What? No! Barricades like the ones in-- You know what, never mind. Let's just get out of here."
 
     Ciel "Hahaha! Claude, I think your friend is afraid of getting caught up in a revolution, no?"
 
+
     Jean "Can you blame me, with the rhetoric you all have been throwing around?"
 
     Ciel "For believing we want a revolution? No. For wanting no part of it? Yes. If you're so against what we stand for, why are you even here?"
 
+    show Claude at center
+
     Claude "I may have made him come... A mistake I now regret."
+
+    show Claude flip at center
 
     Claude "If you're so miserable, mon ami, then just head home, yeah?"
 
-    Ciel "Not yet, note yet. You've piqued my curiosity. Claude, what did you say your friend's name was?"
+    Ciel "Not yet, not yet. You've piqued my curiosity. Claude, what did you say your friend's name was?"
 
     Jean "Jean. Jean Hobier."
 
@@ -147,13 +152,17 @@ label scene5:
 
     Ciel "Our presentation today, what else?"
 
+    show Claude at center
+
     Claude "Ah, Ciel, you are better off trying to get water out of a stone then praise from ou--"
 
-    Ciel "That may be true, but I'm curious.You'll indulge me, won't you, Jean?"
+    Ciel "That may be true, but I'm curious. You'll indulge me, won't you, Jean?"
 
     Jean "..."
 
     Jean "Are you sure you want to know?"
+
+    show Claude flip at center
 
     Claude "Jean...Please do not make a sc--"
 
@@ -172,6 +181,8 @@ label scene5:
     Jean "Our history is like a stage play, repeated endlessly. Despotism, revolution, relapse. The actors change, but the story is always the same. Tyrant-killers rise up, only to become tyrants themselves, or worse. And for the masses? Nothing changes but the name they pay homage to."
 
     Jean "You are children playing a dangerous, pointless game -- one that I want no part in. THAT is what I think."
+
+    show Claude at center
 
     Claude "...Sorry, he gets a little worked up sometimes. The heat afflicts him s--"
 
@@ -226,10 +237,13 @@ label scene5:
     Jean "I'm leaving, Claude."
 
     hide Jean with moveoutright
+    show Claude flip at center
 
     Claude "Hey, hold on, mon ami! You can't just walk away like that!"
 
     Claude "*sigh*"
+
+    show Claude at center
 
     Claude "I guess he can...I'm sorry about that."
 
@@ -260,9 +274,6 @@ label scene5:
     Claude "Nevermind. I'll give it to him, don't worry. See you again here next week?"
 
     Ciel "I'll be here. Now go!"
-
-    hide Claude with dissolve
-    hide Ciel with dissolve
 
 ##################################################
 # End Scene

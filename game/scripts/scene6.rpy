@@ -12,6 +12,8 @@ label scene6:
 
     Young_Parisian_Lieutenant "Wait, I remember hearing about some guy coming to our meeting and yelling at Ciel...That was you, Jean?"
 
+    show Jean flip at center
+
     Jean "Well, I wasn’t really *yelling*..."
 
     Claude "Haha, you can’t be shy now, mon ami! Yes, it was him. We just try to keep that part a bit quiet, yeah? Seeing as he’s a big wig now and everything."
@@ -19,6 +21,8 @@ label scene6:
     Young_Parisian_Lieutenant "I see...That makes sense. So how did you go from *that* to being second in command? What was in the note?"
 
     Claude "You se--"
+
+    show Jean at center
 
     Jean "Hey, you had your turn. This is my part of the story."
 
@@ -32,11 +36,11 @@ label scene6:
 
     Jean "Right, right. It was nothing much, just the name of a local cafe, and a time. It was just after finals, and I didn’t have anything else to do, so I went. Against my better judgment…"
 
-    hide Jean with dissolve
-    hide Claude with dissolve
+    #hide Jean with dissolve
+    #hide Claude with dissolve
 
-    scene bg cafe with None
-    show Jean at left with dissolve
+    scene bg cafe with fade
+    show Jean at left
 
     "*bells jingle*"
 
@@ -182,7 +186,7 @@ label scene6:
 
     Ciel "What am I ‘doing’? Nothing. I’m being myself. Don’t you wish you could do the same?"
 
-    Jean "... … …"
+    Jean "... ... ..."
 
     Jean "My father. It was my father. He was an attorney. A good one. He never said no to anyone, even clients who couldn’t pay. Said that ‘justice has no price’."
 
@@ -356,7 +360,7 @@ label scene6:
 
     Ciel "No. That’s not me. I will not go softly into the night. I will not give up the fight. It doesn’t matter if it’s a lost cause. It is still a cause, and that’s all I need. Don’t you wish you could say the same?"
 
-    Jean "... … …"
+    Jean "... ... ..."
 
     Ciel "Sorry. I got a little carried away. I do that, sometimes. Makes for good theatre. Conversation? Not so much."
 
@@ -388,7 +392,7 @@ label scene6:
 
     Ciel "So will you do it?"
 
-    Jean "... … …"
+    Jean "... ... ..."
 
     Jean "Give me one reason I should."
 
@@ -396,13 +400,13 @@ label scene6:
 
     Ciel "And I don’t think you’d be able to live with that."
 
-    Jean "... … …"
+    Jean "... ... ..."
 
     Jean "I could just give him some money, you know."
 
     Ciel "And you know that wouldn’t solve a thing, if the system which made him homeless remained intact."
 
-    Jean "... … ... "
+    Jean "... ... ..."
 
     Jean "Ah, boise moi mor. You are good at this."
 
@@ -419,9 +423,6 @@ label scene6:
     Jean "Lovely. So you were already planning on running off on the warpath?"
 
     Ciel "Ah, that is where you are mistaken, mon canari. I never leave the warpath. But that is a talk for another day, eh? Enough business. Tell me about your taste in women…"
-
-    hide Jean with dissolve
-    hide Ciel with dissolve
 
 ##################################################
 # End Scene
