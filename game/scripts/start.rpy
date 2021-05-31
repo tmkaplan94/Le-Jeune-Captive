@@ -111,6 +111,8 @@ label start:
 
     "Le Jeune Captive"
 
+label scene_select:
+
     menu:
         "Scene Selection"
 
@@ -135,6 +137,9 @@ label start:
         "Ending":
             jump ending
 
+        "Main Menu":
+            jump start
+
     return
 
 label investigations:
@@ -155,6 +160,6 @@ label investigations:
             jump saint_denis
 
         "Go Back":
-            jump start
+            jump scene_select
 
     return
