@@ -87,9 +87,9 @@ image Ciel = "Ciel Base.png"
 image Ciel flip = im.Flip("Ciel Base.png", horizontal="True")
 image Radiant_Redhead = "Ciel Base.png"
 image Ciel_Dress = "Ciel Dress.png"
-image Ciel_dress flip = im.Flip("Ciel Dress.png", horizontal="True")
+image Ciel_Dress flip = im.Flip("Ciel Dress.png", horizontal="True")
 image Claude = "Claude Base.png"
-image Claude_flip = im.Flip("Claude Base.png", horizontal="True")
+image Claude flip = im.Flip("Claude Base.png", horizontal="True")
 image Rambunctious_Ragamuffin = "macaron.jpg"
 
 # side characters

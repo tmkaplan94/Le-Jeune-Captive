@@ -3,10 +3,10 @@
 ##################################################
 label scene7:
 
-    scene bg safehouse with None
-    show Jean flip at right with dissolve
-    show Claude at center with dissolve
-    show Young_Parisian_Lieutenant flip at left with dissolve
+    scene bg safehouse with fade
+    show Young_Parisian_Lieutenant flip at left
+    show Jean at center
+    show Claude at right
 
     Jean "And that’s it. Are you happy now, abruti?"
 
@@ -14,9 +14,13 @@ label scene7:
 
     Young_Parisian_Lieutenant "Well...Yes, but… I’m a bit confused about how they went from...that to the way they are now."
 
+    show Jean flip at center
+
     Jean "I didn’t sign up to tell that story."
 
     Claude "Ah, you make it sound so difficult! It was simple familiarity. Talking started to feel normal for them, so they started spending every night together at the cafe. One night they had too much to drink, one thing led to another, and suddenly it felt normal for them to act a bit more...intimatel--"
+
+    show Jean at center
 
     Jean "Claude!"
 
@@ -50,6 +54,8 @@ label scene7:
 
     Young_Parisian_Lieutenant "I can handle that! I know the place she’s being held, and my uncle is a gendarme captain and is sympathetic to our cause. He should be able to tell us what we need to know!"
 
+    show Jean flip at center
+
     Jean "Good. Meet us back here tonight and let us know what you find. Oh! And if anything big comes up, let me know immediately. You have my number?"
 
     Young_Parisian_Lieutenant "I do. I’ll let you know right away if anything comes up!"
@@ -58,9 +64,12 @@ label scene7:
 
     Young_Parisian_Lieutenant "Got it! I’ll be back when I have something to report!"
 
-    hide Young_Parisian_Lieutenant with dissolve
+    show Young_Parisian_Lieutenant at left
+    hide Young_Parisian_Lieutenant with moveoutleft
 
     Claude "And what about me? Surely I have a part to play too, right mon ami?"
+
+    show Jean at center
 
     Jean "Do you need to be so dramatic about it…?"
 
@@ -88,9 +97,13 @@ label scene7:
 
     "*knock knock*"
 
+    show Jean flip at center
+
     Claude "Eh? Is she back already?"
 
     Jean "That would be odd. Let me take a…"
+
+    show Jean flip at left with moveoutleft
 
     Claude "What? Who is it?"
 
@@ -98,10 +111,14 @@ label scene7:
 
     Claude "Is it a gendarme?"
 
+    show Jean at left
+
     Jean "I don’t think so. He’s wearing a coat, not a uniform. Besides, after yesterday do you think the gendarme would knock?"
 
     "*door creaks*"
 
+    show Jean at center with moveoutright
+    show Jean flip at center
     show Shady_Statesman flip at left with dissolve
 
     Jean "Who are you? What do you want?"
@@ -112,7 +129,7 @@ label scene7:
 
     Shady_Statesman "I know much about you, Monsieur Hobier...And of your leader. Manque Bergier, wasn’t it? It’s a pity to see such a pretty little bird imprisoned, don’t you think?"
 
-    Jean "... … …"
+    Jean "... ... ..."
 
     Jean "What do you want?"
 
@@ -122,7 +139,13 @@ label scene7:
 
     Shady_Statesman "Because you have no other options? Your leader is in a gilded cage, and you’re both wanted men? Does not sound like the time to be turning down potential allies, does it?"
 
-    Jean "... … …"
+    Jean "... ... ..."
+
+    show Jean at center
+
+    Jean "... ... ..."
+
+    show Jean flip at center
 
     Jean "Give us one moment."
 
@@ -135,6 +158,8 @@ label scene7:
     Claude "I do not like this, Jean. I do not like this one bit. Something about that man does not sit right with me."
 
     Jean "Nor with me…"
+
+    show Jean at center
 
     Jean "Merde! But he is right. We are in no position to turn down help."
 
@@ -152,13 +177,17 @@ label scene7:
 
     Claude "Fine, fine. But if he is a dog, I'll toss him down the staircase."
 
+    show Jean flip at left with moveoutleft
+
     "*door creaking*"
 
     Jean "Alright. Get in."
 
     Shady_Statesman "Good, good. I knew you’d come around."
 
+    show Jean at center with moveinright
     show Shady_Statesman flip at left with dissolve
+    show Jean flip at center
 
     "*door creaking shut*"
 
@@ -192,11 +221,15 @@ label scene7:
 
     Claude "He is?"
 
+    show Jean at center
+
     Jean "Claude…"
 
     Shady_Statesman "Ah, so this is news to you? Have you not gone outside? The newscasters may have called it a riot, but that is not what they are saying in the clubs and cafes."
 
     Shady_Statesman "There is a video going around. One of a young, fiery haired woman leading a group of protestors away while screaming abuse at the military."
+
+    show Jean flip at center
 
     Shady_Statesman "Her followers were gunned down around her, yet she did not flee. Instead, she hurled herself towards the gendarme, where she was beaten."
 
@@ -222,7 +255,7 @@ label scene7:
 
     Shady_Statesman "We have connections. The president is not the only man who takes our calls."
 
-    Jean "... … ... "
+    Jean "... ... ..."
 
     Shady_Statesman "So, what do you say, Jean?"
 
@@ -248,7 +281,7 @@ label scene7:
 
     Shady_Statesman "She will be safe in her bed by nightfall."
 
-    Jean "... … …"
+    Jean "... ... ..."
 
     Jean "One moment. We must discuss."
 
@@ -261,6 +294,8 @@ label scene7:
     Jean "Maybe not, but…"
 
     Claude "But what? He will use us in the worst way, then dump us when he is done. Is he not already betraying Macron? Do you think he would not do the same to us?"
+
+    show Jean at center
 
     Jean "C'est des conneries! No, of course not! I’m not a fool! But...What will happen to Ciel if we refuse? If she is as important as he says...You know they would never let her go."
 
@@ -331,15 +366,21 @@ label get_bent:
 
     Shady_Statesman "So? Do we have a deal?"
 
+    show Jean flip at center
+
     Jean "No. We do not. Your terms are unacceptable. We have no interest in becoming the playthings of some shadowy capitalist cabal."
 
     Claude "Yeah! Baiche coupe, pig!"
 
     Jean "*sigh*"
 
-    Jean "Claude…Why can’t you just keep your mouth shut?"
+    show Jean at center
+
+    Jean "Claude… Why can’t you just keep your mouth shut?"
 
     Shady_Statesman "Unfortunately. We had so hoped you would come to the...correct conclusion, but I see our hopes were misplaced."
+
+    show Jean flip at center
 
     Shady_Statesman "What is it with you revolutionary types, anyways? You’re always so willing to sacrifice victory in order to keep your precious moral purity. I’ve never understood it."
 
@@ -363,9 +404,11 @@ label get_bent:
 
     hide Shady_Statesman with dissolve
 
-    Jean "... … …"
+    Jean "... ... ..."
 
     Claude "Jean? What’s wrong?"
+
+    show Jean at center
 
     Jean "Nothing. Nothing. Let’s go. We have a lot of work to do."
 
