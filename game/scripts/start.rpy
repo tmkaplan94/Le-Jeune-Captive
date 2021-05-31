@@ -70,11 +70,11 @@ image HotelOutside = "HotelOutside.jpg"
 image HotelRoomMap = "HotelRoomMap.png"
 image alley = "alley1.jpg"
 image poll office = "pollOffice.jpg"
-image bg LeGrandRoi sidewalk = "bg LeGrandRoi sidewalk.png"
-image bg LeGrandRoi protest = "bg LeGrandRoi protest.png"
-image bg LeGrandRoi front = "bg LeGrandRoi front.png"
-image bg LeGrandRoi riot1 = "bg LeGrandRoi riot1.png"
-image bg LeGrandRoi riot2 = "be LeGrandRoi riot2.png"
+image bg LeGrandRoi sidewalk = "bg LeGrandRoi sidewalk.jpg"
+image bg LeGrandRoi protest = "bg LeGrandRoi protest.jpg"
+image bg LeGrandRoi front = "bg LeGrandRoi front.jpg"
+image bg LeGrandRoi riot1 = "bg LeGrandRoi riot1.jpg"
+image bg LeGrandRoi riot2 = "bg LeGrandRoi riot2.jpg"
 
 # main characters and their variations
 image Jean = "Jean Base.png"
@@ -83,6 +83,7 @@ image Jean flip = im.Flip("Jean Base.png", horizontal="True")
 image Ciel = "Ciel Base.png"
 image Radiant_Redhead = "Ciel Base.png"
 image Ciel_Dress = "Ciel Dress.png"
+image Ciel_dress flip = im.Flip("Ciel Dress.png", horizontal="True")
 image Claude = "macaron.jpg"
 image Claude_flip = im.Flip("macaron.jpg", horizontal="True")
 image Rambunctious_Ragamuffin = "macaron.jpg"
@@ -103,6 +104,7 @@ image Gaston = "npc.png"
 image Guard = "npc.png"
 image Security_Guard = "npc.png"
 image Police_Chief = "npc.png"
+image Police_Chief flip = im.Flip("npc.png", horizontal="True")
 
 
 label start:
