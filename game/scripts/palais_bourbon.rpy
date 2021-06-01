@@ -213,7 +213,7 @@ label palaisb_coffice:
 
     scene ciel office with fade
 
-    show Jean at right with moveinright
+    show Jean flip at right with moveinright
 
     Jean "(Here we are. Now… where to look?)"
 
