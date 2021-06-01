@@ -9,7 +9,7 @@ label scene3:
 
     show Claude at left with moveinright
     show Ciel at center with moveinright
-    show Jean at right with moveinright
+    show Jean flip at right with moveinright
 
     Claude "*huff* *huff*"
 
@@ -115,7 +115,7 @@ label scene3:
         "Moments later..."
 
         show Claude at center with moveinright
-        show Jean at right with moveinright
+        show Jean flip at right with moveinright
 
         Jean "CIEL! Where are you?"
 
@@ -200,7 +200,7 @@ label scene3:
         hide Young_Parisian_Lieutenant with moveoutleft
         show Ciel at left with move
         show Claude at center with move
-        show Jean at right with moveinright
+        show Jean flip at right with moveinright
 
         Claude "Ah, Ciel...You have such a gift for words! Why do you waste them on this dull ingrate?"
 
@@ -238,7 +238,7 @@ label scene3:
         Frustrated_Young_Parisian "This is a public space! We’re not going anywhere!"
 
         show Claude at right with dissolve
-        show Jean at center with dissolve
+        show Jean flip at center with dissolve
 
         Jean "You’d think they’d have figured out by now that yapping on a loudspeaker isn’t going to accomplish anything."
 
@@ -246,7 +246,7 @@ label scene3:
 
         Jean "Right. Let me know when you manage to convince the rich to tax themselves. It’s not like the representatives are the ones in bread lines."
 
-        show Ciel at left with moveinleft
+        show Ciel flip at left with moveinleft
 
         Ciel "Yes, but the voters who put them there are, and it couldn’t hurt to make sure they remember that, don’t you think?"
 
@@ -287,7 +287,7 @@ label scene3:
         Ciel "It will be fine. Hey, you!"
 
         hide Claude with moveoutright
-        show Jean at right with move
+        show Jean flip at right with move
         show Ciel at center with move
         show Young_Parisian_Lieutenant at left with moveinleft
 
@@ -303,7 +303,7 @@ label scene3:
 
         hide Young_Parisian_Lieutenant with moveoutleft
         show Ciel at left with move
-        show Jean at center with move
+        show Jean flip at center with move
         show Claude at right with moveinright
 
         Mousat "This is your last warning. Begin leaving now, or face arrest!"
@@ -316,7 +316,7 @@ label scene3:
 
         show Claude at left with move
         show Ciel at center with move
-        show Jean at right with move
+        show Jean flip at right with move
 
         Claude "Hey! Hey You! Yeah, you with the megaphone! Head pig!"
 
