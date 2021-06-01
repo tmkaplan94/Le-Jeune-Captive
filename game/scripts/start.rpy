@@ -86,28 +86,26 @@ image Jean flip = im.Flip("Jean Base.png", horizontal="True")
 image Ciel = "Ciel Base.png"
 image Ciel flip = im.Flip("Ciel Base.png", horizontal="True")
 image Radiant_Redhead = "Ciel Base.png"
+image Radiant_Redhead flip = im.Flip("Ciel Base.png", horizontal = "True")
 image Ciel_Dress = "Ciel Dress.png"
 image Ciel_Dress flip = im.Flip("Ciel Dress.png", horizontal="True")
 image Claude = "Claude Base.png"
 image Claude flip = im.Flip("Claude Base.png", horizontal="True")
-image Rambunctious_Ragamuffin = "macaron.jpg"
+
 
 # side characters
+image Rambunctious_Ragamuffin = "npc.png"
 image Worried_Protester = "npc.png"
 image Dehydrated_Protester = "npc.png"
-image Agitated_Protester = "npc.png"
+image Agitated_Protester = "fnpc.png"
 image Frustrated_Youth = "npc.png"
-image Downtrodden_Worker = "npc.png"
+image Downtrodden_Worker = "fnpc.png"
 image Disgruntled_Worker = "npc.png"
-image Agitated_Protester = "npc.png"
-image Frustrated_Youth = "npc.png"
-image Downtrodden_Worker = "npc.png"
-image Disgruntled_Worker = "npc.png"
-image Young_Parisian_Lieutenant = "npc.png"
-image Young_Parisian_Lieutenant flip = im.Flip("npc.png", horizontal="True")
+image Young_Parisian_Lieutenant = "fnpc.png"
+image Young_Parisian_Lieutenant flip = im.Flip("fnpc.png", horizontal="True")
 image Gaston = "npc.png"
 image Guard = "npc.png"
-image Security_Guard = "npc.png"
+image Security_Guard = "fnpc.png"
 image Police_Chief = "npc.png"
 image Police_Chief flip = im.Flip("npc.png", horizontal="True")
 image Shady_Statesman = "npc.png"

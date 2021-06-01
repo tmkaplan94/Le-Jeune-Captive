@@ -8,9 +8,8 @@ label scene1:
 
     "16 March, 2019 - Champs-Elysées - First Aid Station"
 
-    show Worried_Protester at left with dissolve
-    show Jean at right with dissolve
-    show Moody_Medic at right
+    show Worried_Protester at right with dissolve
+    show Jean at left with dissolve
 
     Moody_Medic "Come on, mec. I’m not here to coddle you -- are you ready or not?"
 
@@ -23,8 +22,6 @@ label scene1:
     Moody_Medic "Bête! Of fucking course I am! Of course it will hurt! You should have thought about that before your little parkour stunt, no?"
 
     Worried_Protester "Hey, no need to be un connard, yeah? That’s some bedside manner you have there, Jean."
-
-    hide Moody_Medic
 
     Jean "Yeah, yeah, whatever. Do you want me to fix your arm or not?"
 
@@ -82,6 +79,8 @@ label scene1:
     Jean "You’re fine, mec. You’re fine. I’ve got you. Just let me take a look at you, and we’ll figure out what’s wrong."
 
     Dehydrated_Protester "O-ok."
+
+    show Dehydrated_Protester at center with move
 
     Jean "Let me see… Hmm…."
 

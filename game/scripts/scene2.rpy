@@ -7,7 +7,7 @@ label scene2:
 
     "16 March, 2019 - Champs-Elysées - Fouquets’"
 
-    show Radiant_Redhead at left with dissolve
+    show Radiant_Redhead flip at left with dissolve
 
     Radiant_Redhead "..And will we stand by while these dogs bleed us, the real citizens of France, dry?!"
 
@@ -33,7 +33,7 @@ label scene2:
 
     Radiant_Redhead "No! No we will not, Pairisans. We will stand! We will fight! We will take back what they’ve stolen from us -- take back the work of our hands that they’ve so thoroughly polluted."
 
-    show Jean at right with moveinright
+    show Jean flip at right with moveinright
 
     Radiant_Redhead "Parisians! Who is with m--"
 
@@ -45,7 +45,7 @@ label scene2:
 
     Jean "CIEL!"
 
-    hide Jean with moveoutright
+    hide Jean flip with moveoutright
     show Frustrated_Youth at right with moveinright
 
     Frustrated_Youth "I am!"
@@ -56,7 +56,7 @@ label scene2:
     Downtrodden_Worker "And I am!"
 
     hide Downtrodden_Worker with moveoutright
-    show Jean at right with moveinright
+    show Jean flip at right with moveinright
 
     Jean "CIEL!!!"
 
@@ -142,6 +142,9 @@ label scene2:
     hide Disgruntled_Worker with dissolve
     show Jean at right with move
     show Ciel at left with move
+
+    show Jean flip at right with move
+    show Ciel flip at left with move
 
     Ciel "You know, Jean, one day your unwillingness to ever give an inch is going to get you killed. I can’t always be here to protect you, you know."
 
