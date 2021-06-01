@@ -6,7 +6,7 @@ label ending:
 
     scene bg LeGrandRoi sidewalk with None
 
-    "DD Month, YYYY - walking to Le Grand Roi"
+    "Walking to Le Grand Roi theatre."
 
     show Ciel_Dress at right with moveinright
 
