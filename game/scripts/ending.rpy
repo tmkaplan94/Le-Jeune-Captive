@@ -6,7 +6,7 @@ label ending:
 
     scene bg LeGrandRoi sidewalk with None
 
-    "Walking to Le Grand Roi theatre."
+    "December 13, 2029 - Le Grand Roi - Walking to the theatre."
 
     show Ciel_Dress at right with moveinright
 

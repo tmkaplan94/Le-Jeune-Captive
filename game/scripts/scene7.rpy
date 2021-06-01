@@ -4,6 +4,8 @@
 label scene7:
 
     scene bg safehouse with fade
+    "17 March, 2019 - The Safehouse"
+    
     show Young_Parisian_Lieutenant flip at left
     show Jean at center
     show Claude at right
