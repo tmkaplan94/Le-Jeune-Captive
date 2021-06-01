@@ -1,5 +1,5 @@
 ##################################################
-# Scene 7: Le Grand Roi
+# Scene Ending: Le Grand Roi
 ##################################################
 
 label ending:
@@ -185,7 +185,59 @@ label console_dialogue:
             jump ending_stay
 
 label ending_leave:
+
+    Jean "And what, leave everything behind... everything we've worked so hard to achieve??"
+
+    Ciel "And would you be okay leaving me behind?"
+
+    Jean "There has to be another way..."
+
+    Ciel "You don't understand, I have no choice. They'll kill me!"
+
+    Ciel "I can't live like this, people are suffering because of me."
+
+    Ciel "It goes against everything I stand for."
+
+    Jean "Ciel..."
+
+    Jean "You leave me no choice. Who's going to be there to protect you?"
+
+    Ciel "*smiles*"
+
+    Jean "*smirk*"
+
+    Jean "We can figure this out together. When do we leave?"
+
+    scene bg start Paris with fade
+    "La Fin"
+
     return
 
 label ending_stay:
+
+    Jean "And what, leave everything behind... everything we've worked so hard to achieve??"
+
+    Ciel "And would you be okay leaving me behind?"
+
+    Jean "Don't turn this around on me!"
+
+    Ciel "You don't understand, I have no choice. They'll kill me!"
+
+    Ciel "I can't live like this, people are suffering because of me."
+
+    Ciel "It goes against everything I stand for."
+
+    Jean "Ciel..."
+
+    Jean "If we run now, they'll never stop chasing us."
+
+    Jean "I can't follow you down this path any longer."
+
+    Jean "I'm sorry, but I need to go."
+
+    Ciel "*sobs*"
+
+    scene bg start Paris with fade
+    "La Fin"
+
     return
