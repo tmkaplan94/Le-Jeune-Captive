@@ -4,6 +4,8 @@
 label scene6:
 
     scene bg safehouse with fade
+    "November 15th, 2018 - Université Panthéon-Assas"
+    
     show Young_Parisian_Lieutenant flip at left
     show Jean at center
     show Claude at right

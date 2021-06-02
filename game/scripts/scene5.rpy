@@ -4,18 +4,25 @@
 label scene5:
 
     scene bg black with fade
+    "November 15th, 2018 - Université Panthéon-Assas"
 
     Jean "Hmm..."
 
+    scene bg cafe with fade
+    show Jean at center
+
     Jean "It was winter last year, just after midterms. I was enjoying some well-earned solitude at the local cafe when she first approached me..."
 
-    scene bg cafe with fade
-    show Ciel flip at left
-    show Jean flip at right
+    show Ciel at right with moveinright
 
     Jean "I had seen her around the university before, of course, but never spoke--"
 
     Claude "Hey? What are you doing, mon ami?"
+
+    scene bg safehouse
+    show Young_Parisian_Lieutenant flip at left
+    show Jean at center
+    show Claude at right
 
     Jean "What you wanted, connard. Telling the story of how Ciel and I met."
 
@@ -23,9 +30,13 @@ label scene5:
 
     Young_Parisian_Lieutenant "The truth? What is he talking about, Jean?"
 
+    show Jean flip at center
+
     Jean "Absolutely nothing."
 
     Claude "Ah haha! It's nothing to be ashamed of! Well. For a normal person, maybe, but it's not like anyone would be surprised to hear you met while making a beauf o--"
+
+    show Jean at center
 
     Jean "I did not! All of my objections were perfectly valid!"
 
@@ -49,6 +60,8 @@ label scene5:
 
     Claude "Far. Now, we will need to rewind a bit from the cafe...Same day, but in the afternoon. I had just finished flunking my last exam of the semester, and I was looking for some...companionship, yeah?"
 
+    scene bg university with fade
+
     Jean "A girl. He was looking for a hook up. Pathetically."
 
     Claude "No need to be so crude, mon ami. I just wanted to share my elation at my newfound freedom with someone else. A beautiful someone else. Is that so wrong?"
@@ -69,6 +82,9 @@ label scene5:
 
     Claude "Jean had been locked in our room studying for weeks, so I thought it was time he got some fresh air. You know. Lived a little. So we went out together."
 
+    show Claude at center with dissolve
+    show Jean flip at right with dissolve
+
     Claude "We prowled the grounds together, looking to make merry, if you know what I mean. It was then that we bumbled into the Young Parisian rally. It looked like some kind of outreach event. Tons of speeches and what not, but most importantly..."
 
     Jean "Food. They had free food."
@@ -87,9 +103,16 @@ label scene5:
 
     Jean "He was too busy oogling the rest of the crowd..."
 
+    scene bg safehouse
+    show Young_Parisian_Lieutenant flip at left
+    show Jean at center
+    show Claude at right
+
     Claude "I was not! At that moment, I only had eyes for Ciel. It was as if a flame-wreathed seraphim had descended from the heavens and was speaking to us. Nothing else mattered to me but that I might get a chance to meet this lady who was unlike any other."
 
     Young_Parisian_Lieutenant "Wait...but...You're making it sound like you were the one who fell for Ciel."
+
+    show Jean flip at center
 
     Jean "He was."
 
@@ -103,15 +126,16 @@ label scene5:
 
     Young_Parisian_Lieutenant "Oh? So you stole her away, Jean? What happened?"
 
+    scene bg university with fade
+
     Jean "It wasn't like that at all."
 
     Claude "At least, we agree. Jean only won Ciel's heart despite his best efforts. He was trying to be a good wingman, but alas..."
 
     Claude "After the rally, everyone milled around and enjoyed the pizza. I took the opportunity to approach Ciel and give her my regards. We were having a lovely little conversation, when a certain wet napkin made his way over..."
 
-    scene bg university with fade
-    show Ciel flip at left
-    show Claude at center
+    show Ciel flip at left with dissolve
+    show Claude at center with dissolve
 
     Claude "No, I have not had the pleasure of reading his work. You will have to enlighten me sometime. Perhaps at dinner...?"
 
@@ -128,7 +152,6 @@ label scene5:
     Jean "What? No! Barricades like the ones in-- You know what, never mind. Let's just get out of here."
 
     Ciel "Hahaha! Claude, I think your friend is afraid of getting caught up in a revolution, no?"
-
 
     Jean "Can you blame me, with the rhetoric you all have been throwing around?"
 

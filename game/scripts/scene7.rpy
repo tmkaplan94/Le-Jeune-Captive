@@ -4,6 +4,8 @@
 label scene7:
 
     scene bg safehouse with fade
+    "17 March, 2019 - The Safehouse"
+    
     show Young_Parisian_Lieutenant flip at left
     show Jean at center
     show Claude at right
@@ -315,7 +317,7 @@ label scene7:
 
     Claude "Then we do not, and the dice fall where they may. But our conscience would be clean, no? Is that not worth something?"
 
-    Jean "... … …"
+    Jean "... ... ..."
 
     Claude "You cannot seriously still be considering him!"
 
