@@ -19,6 +19,8 @@ label saint_denis:
 
     scene alley with fade
 
+    "9 November, 2029 - Saint-Denis Poll Office - Outside"
+
     show Claude at right with dissolve
     show Jean at left with dissolve
 
@@ -53,6 +55,8 @@ label saint_denis:
     Jean "Put on your mask. C’est parti."
 
     show Claude at center with move
+    hide Claude
+    show Claude flip at center
 
     show Guard at right with moveinright
 
@@ -68,11 +72,17 @@ label saint_denis:
 
     Jean "Okay Claude—"
 
-    Claude "…he really just said my name."
+    hide Claude flip
+    show Claude at center
+
+    Claude "…you really just said my name."
 
     Jean "I mean—uh, Claudio. Take the keys."
 
     Claude "…Sure thing, Jeanelle. Whatever you say, Jeanelle."
+
+    hide Claude
+    show Claude flip
 
     Guard "…"
 
@@ -134,8 +144,8 @@ label saint_denis_int:
 
     Jean "Is that a switchblade?! What are you—!"
 
-    show Claude at right with move
-    show Claude at center with move
+    show Claude flip at right with move
+    show Claude flip at center with move
 
     "*Slam*"
 
@@ -147,8 +157,8 @@ label saint_denis_int:
 
     Guard "You can’t scare—OW!"
 
-    show Claude at right with move
-    show Claude at center with move
+    show Claude flip at right with move
+    show Claude flip at center with move
 
     "*Slam*"
 
@@ -162,11 +172,11 @@ label saint_denis_int:
 
     Guard "—! Zip-ties?! Really?! C'est quoi ce bordel, I already—"
 
-    show Claude at right with move
+    show Claude flip at right with move
 
     Jean "Shush. No more talking from you."
 
-    show Claude at center with move
+    show Claude flip at center with move
 
     Guard "*angry muffled talking*"
 
@@ -182,7 +192,9 @@ label saint_denis_office:
 
     scene poll office with fade
 
-    show Jean at left with moveinright
+    show Jean flip at left with moveinright
+    hide Jean flip
+    show Jean at left
     show Claude at right with moveinright
 
     Jean "Finally. We’re finally inside this godforsaken building."
@@ -235,10 +247,10 @@ label saint_denis_trash:
 
     scene poll office with fade
 
+    "*Some time passes*"
+
     show Jean at left with dissolve
     show Claude at right with dissolve
-
-    "*Some time passes*"
 
     Claude "Fini! Let’s see what this says…by order of the Prime Minister Ciel Rousseau… blah blah blah...the following districts shall be recounted...blah blah—"
 
@@ -313,6 +325,11 @@ label saint_denis_suspicious_ballots:
 
 label saint_denis_end:
 
+    scene poll office with fade
+
+    show Jean at left with dissolve
+    show Claude at right with dissolve
+
     Jean "So it’s true. Ciel’s office ordered for this election to be rigged under the guise of a recount."
 
     Claude "And they destroyed opposing ballots and replaced them with useless empty ones. Even if a public recount is done later, the empty ballots wouldn’t raise anyone's suspicion since it’s a pretty common practice."
@@ -324,3 +341,5 @@ label saint_denis_end:
     Jean "...I just hope this is some terrible misunderstanding. Because if it isn’t…"
 
     Jean "...what else are you hiding, Ciel?"
+
+    jump ending

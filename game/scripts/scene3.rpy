@@ -19,6 +19,8 @@ label scene3:
 
     Claude "I...I’m sorry, M-Mon amis...G..Go on without me…"
 
+    show Claude flip at left
+
     "*thump*"
 
     Ciel "Claude? Claude! Are you ok?"
@@ -40,6 +42,8 @@ label scene3:
     Jean "Ha ha. Funny. Let’s keep moving."
 
     Claude "Oy! I still need a minute to catch my breath, yeah? Don’t leave me alone. Please?"
+
+    show Ciel flip at center
 
     Ciel "What do you think, Ma moitié?"
 
@@ -71,6 +75,7 @@ label scene3:
 
         Jean "You nev-- Hey! Are you listening?"
 
+        show Ciel at center
         hide Ciel with moveoutleft
 
         Claude "Ah...She is quite a woman, is she not, mon ami?"
@@ -107,6 +112,7 @@ label scene3:
 
         Claude "No need, no need! I’m better now. Let’s go, before we miss the fun!"
 
+        show Claude at left
         hide Claude with moveoutleft
         hide Jean with moveoutleft
 
@@ -138,7 +144,7 @@ label scene3:
         Jean "Just keep moving to the front. There’s no way she won’t b--"
 
         hide Downtrodden_Worker with moveoutleft
-        show Ciel at left with moveinleft
+        show Ciel flip at left with moveinleft
 
         Ciel "Ah! There you two are!"
 
@@ -158,15 +164,21 @@ label scene3:
 
     label gendarme_conclusion:
 
+        show Ciel at left
+
         Claude "Oh...Baise moi mor! Is that a tank?!"
 
         Jean "They brought the military?! Ciel, we need to get out of here. They aren’t messing around."
+
+        show Ciel flip at left
 
         Ciel "No. We’re not leaving. Not now."
 
         Jean "Ciel, this isn’t a game! These aren’t Parisians. They don’t care what happens to us."
 
         Ciel "It never was a game, Jean. Everyone here came to stand up for what they believe in, and I’m not going to dishonor that by buckling the second the wind blows!"
+
+        show Claude flip at center
 
         Claude "She has a point, mon ami. Besides, they’re still Frenchmen. They would not fire into a crowd."
 
@@ -175,11 +187,14 @@ label scene3:
         Ciel "Give me some credit. I’m brave, not stupid, ma moitié. I have no more desire to ge--"
 
         hide Jean with moveoutright
-        show Claude at right with move
-        show Ciel at center with move
+        show Claude flip at right with move
+        show Ciel flip at center with move
         show Young_Parisian_Lieutenant at left with moveinleft
 
         Young_Parisian_Lieutenant "Ciel! There you are! What should we do?"
+
+        show Claude at right
+        show Ciel at center
 
         Ciel "What do you mean? This is why we came here, no? We stand up, and let them know that we will not be intimidated!"
 
@@ -206,6 +221,8 @@ label scene3:
 
         Jean "Better to be dull than dead, no?"
 
+        show Ciel flip at left
+
         Ciel "Relax. No one will die today. They still haven’t moved. They’re just here to intimidate us, nothing more."
 
         Ciel "And Claude? It’s because sometimes it’s nice to have someone you can’t sway around. Someone to keep your feet on the ground."
@@ -214,6 +231,8 @@ label scene3:
 
         Jean "It’s truly amazing how fast you turned her romantic words mundane."
 
+        show Claude flip at center
+
         Claude "Oh, was it? Thank you, sir. Thank you."
 
         Jean "That was no compliment."
@@ -221,6 +240,8 @@ label scene3:
         Claude "Just because you did not mean it as one does not mean it can’t become one, mon ami."
 
         Jean "Whatever you say...So, what do we do now, Ciel?"
+
+        show Claude at center
 
         Ciel "We gather together, make sure they can hear our message, and wait."
 
@@ -238,7 +259,7 @@ label scene3:
         Frustrated_Young_Parisian "This is a public space! We’re not going anywhere!"
 
         show Claude at right with dissolve
-        show Jean flip at center with dissolve
+        show Jean at center with dissolve
 
         Jean "You’d think they’d have figured out by now that yapping on a loudspeaker isn’t going to accomplish anything."
 
@@ -249,6 +270,8 @@ label scene3:
         show Ciel flip at left with moveinleft
 
         Ciel "Yes, but the voters who put them there are, and it couldn’t hurt to make sure they remember that, don’t you think?"
+
+        show Jean flip at center
 
         Claude "Ah, Ciel, you have returned. What word from the other groups?"
 
@@ -267,6 +290,8 @@ label scene3:
         Claude "Of course. What kind of idiot do you take m--"
 
         question_marks "Attention demonstrators!"
+
+        show Ciel at left
 
         Ciel "That is a new voice, is it not?"
 
@@ -310,13 +335,17 @@ label scene3:
 
         Jean "Ciel…"
 
+        show Ciel flip at left
+
         Ciel "You know I’m not leaving."
 
         Jean "That doesn’t mean we have to stand in the front lines! Claude, talk some sen--"
 
         show Claude at left with move
-        show Ciel at center with move
+        show Ciel flip at center with move
+        show Ciel at center
         show Jean flip at right with move
+
 
         Claude "Hey! Hey You! Yeah, you with the megaphone! Head pig!"
 
@@ -328,7 +357,11 @@ label scene3:
 
         Ciel "Haha, you have the spirit of a true revolutionary, Claude!"
 
+        show Claude flip at left
+
         Claude "Ah, but do you think I have the ass of a true revolutionary? Perhaps they know, eh?"
+
+        show Claude at left
 
         Claude "What do you think, head pig? Do I have a revolutionary as--"
 
@@ -339,6 +372,8 @@ label scene3:
         show Claude at center with move
         show Ciel at left with move
 
+        show Ciel flip at left
+
         "*thunk*"
 
         Ciel "Claude! What happened?"
@@ -346,6 +381,8 @@ label scene3:
         Claude "Ahh…I think my ass is broken…"
 
         Jean "You can already see the bruise...Rubber bullets. Ciel, they are no--"
+
+        show Ciel at left
 
         "*bang bang bang bang*"
 
@@ -355,15 +392,21 @@ label scene3:
 
         Jean "Ciel! We have to get out of here! They’re shooting into the crowd!"
 
+        show Ciel flip at left
+
         Ciel "No! Not until the rest of our people are safe!"
 
         Jean "Then what abou--Oh, putain! Claude, get your pants back on, we have to get out of here!"
 
         Young_Parisian_Lieutenant "Ciel! What do we do? There’s already a few injured…"
 
+        show Ciel at left
+
         Ciel "C'est des conneries! They can’t do this! It’s madness!"
 
         Jean "Madness or not, they are! Ciel, you have to tell them to run!"
+
+        show Ciel flip at left
 
         Ciel "But we were so close…"
 
@@ -373,7 +416,11 @@ label scene3:
 
         Ciel "..."
 
+        show Ciel at left
+
         Ciel "Everyone, gather the injured and head down the Champs! Stay in cover as much as you can!"
+
+        show Ciel flip at left
 
         Ciel "I’m going to make sure everyone makes it out of here. Take care of Claude!"
 
@@ -414,6 +461,7 @@ label scene3:
 
         Jean "Not the time! Of course I love you too, as long as you don’t get yourself killed! Go, do what you must!"
 
+        show Ciel at left
         hide Ciel with moveoutleft
 
         jump gendarme_aftermath
@@ -433,6 +481,7 @@ label scene3:
 
         Jean "And I love you, mon fou! Now go, before it’s too late!"
 
+        show Ciel at left
         hide Ciel with moveoutleft
 
         jump gendarme_aftermath
@@ -447,6 +496,8 @@ label scene3:
         Helpful_Agitator "Come on, mec. I have you!"
 
         Jean "Come now, Claude. It’s time for us to go!"
+
+        show Claude flip at center
 
         Claude "I think this is the end of me, mon ami…Just leave me..."
 
@@ -471,6 +522,7 @@ label scene3:
         Jean "I hope…"
 
         hide Claude with moveoutright
+        show Jean at right
         hide Jean with moveoutright
 
 ##################################################

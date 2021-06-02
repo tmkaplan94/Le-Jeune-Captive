@@ -22,6 +22,8 @@ label tresor_nationale:
 
     scene bg office with fade
 
+    "20 May, 2029 - Jean's Office"
+
     show Jean at center with dissolve
 
     Jean "Finally…"
@@ -88,15 +90,13 @@ label tresor_nationale:
 
     Jean "I’d best hurry up then..."
 
-    hide Jean with dissolve
-
     scene bg cafe with fade
 
-    show Jean at right with moveinright
+    show Jean flip at right with moveinright
 
     Jean "Hah hah… Fifteen minutes is much too fast..."
 
-    show Claude at left with dissolve
+    show Claude flip at left with dissolve
 
     show Ciel at center with dissolve
 
@@ -105,6 +105,9 @@ label tresor_nationale:
     Claude "It’s a shame, lovely lady she was. If only-"
 
     Claude "Ah! Look who decided to show up!"
+
+    hide Ciel
+    show Ciel flip at center
 
     Ciel "Ma moitié! Look who happened to be here! Claude and I had a bit of a chat since you were so late!"
 
@@ -145,8 +148,8 @@ label sadge_restaurant:
 
     Claude "Ah, just like the good old days."
 
-    hide Claude
-    show Claude_flip at left
+    hide Claude flip
+    show Claude at left
 
     Claude "Excuse me my dear, can I bother you for a moment? I’d like to order two spinach quiches and a round of mimosas."
 
@@ -172,8 +175,8 @@ label yikes_restaurant:
 
     Claude "Oh, you two haven’t aged a day."
 
-    hide Claude
-    show Claude_flip at left
+    hide Claude flip
+    show Claude at left
 
     Claude "Excuse me my dear, can I bother you for a moment? I’d like to order two spinach quiches and a round of mimosas."
 
@@ -183,9 +186,9 @@ label continue_restaurant:
 
     scene bg cafe with fade
 
-    show Claude at left with dissolve
+    show Claude flip at left with dissolve
     show Ciel at center with dissolve
-    show Jean at right with dissolve
+    show Jean flip at right with dissolve
 
     Ciel "No wonder you’re single! Treat a woman like that and she’s ditching you before you can say ‘Ah, la vache’!"
 
@@ -193,11 +196,17 @@ label continue_restaurant:
 
     Jean "I-"
 
+    hide Ciel
+    show Ciel flip at center
+
     Ciel "Don’t. Even. Think about it."
 
     Claude "Too much spice? Ah… It’s not as easy as it was in college."
 
     Claude "Speaking of college, congratulations mon ami! I heard your funds for the new law school went through."
+
+    hide Ciel flip
+    show Ciel at center
 
     Ciel "Uhhh, who?"
 
@@ -210,6 +219,9 @@ label continue_restaurant:
     Claude "Today is the 20th, no? Perhaps the mimosas got to you. The news said you made the transaction yesterday."
 
     Jean "Ciel, it isn’t like you to forget something as important as this. This was one of the things you dreamed of. You would’ve told me immediately about this."
+
+    hide Ciel
+    show Ciel flip
 
     Ciel "Ma moitié, I’m… I’m sorry. Things have just been so busy that it completely slipped my mind, I..."
 
@@ -227,6 +239,9 @@ label continue_restaurant:
 
     Claude "Maybe it was the mimosas. How many did you have?"
 
+    hide Ciel flip
+    show Ciel
+
     Ciel "...I think four? Maybe five? I can’t remember."
 
     Claude "Bordel de merde! Perhaps it is true. Let’s get her some water."
@@ -237,13 +252,18 @@ label continue_restaurant:
 
     Jean "Of course not."
 
+    hide Jean flip
+    show Jean at right
+
     Jean "Excuse me, can we get some water?"
 
     scene bg cafe2 with fade
 
     "The next day..."
 
-    show Jean at left with moveinright
+    show Jean flip at left with moveinright
+    hide Jean flip
+    show Jean at left
     show Claude at right with moveinright
 
     Claude "What’s the occasion, mon ami? You never take me out to lunch anymore. You are paying aren’t you?"
@@ -334,6 +354,11 @@ label continue_restaurant:
 
     Jean "It’s clear, let’s go."
 
+    hide Jean
+    show Jean flip at left
+    hide Jean flip with moveoutleft
+    hide Claude with moveoutleft
+
     "*huff huff*"
 
     "*STOMP STOMP STOMP*"
@@ -360,7 +385,9 @@ label continue_restaurant:
 
     "*huff huff huff*"
 
-    show Jean at left with moveinright
+    show Jean flip at left with moveinright
+    hide Jean flip
+    show Jean at left
     show Claude at right with moveinright
 
     Jean "We made it..."
@@ -385,10 +412,15 @@ label continue_restaurant:
 
     Jean "Merde! It can’t be done. I suppose I must look around for alternative methods..."
 
-    show Jean at left with move
+    hide Jean
+    show Jean flip at center
+    show Jean flip at left with move
     show Claude at center with move
 
     Jean "Claude, come help! We need to find a window or something!"
+
+    hide Jean flip
+    show Jean at left
 
     Jean "Claude?"
 
@@ -400,6 +432,9 @@ label continue_restaurant:
 
     Jean "That’s the guard-"
 
+    hide Claude
+    show Claude flip at center
+
     Claude "Hello my friend! Thank you again for the keys!"
 
     Jean "I cannot believe you..."
@@ -410,7 +445,9 @@ label continue_restaurant:
 
     "*stomp stomp*"
 
-    show Claude at right with moveinleft
+    show Claude flip at right with moveinleft
+    hide Claude flip
+    show Claude at right
     show Jean at left with moveinleft
 
     Jean "Alright, we reached the terminal. We should be able to find the transaction history in here."
@@ -688,6 +725,7 @@ label decode_success:
 
     show Jean at left with dissolve
     show Claude at right with dissolve
+
     Jean "Seal… What could that mean?"
 
     Claude "Ah, I love those little beasts. Best ocean animal if I do say so myself. I remember seeing them at the aquarium one time on a date and-"
@@ -732,8 +770,8 @@ label decode_success:
     # New scene
 
     scene bg car with fade
-    show Claude at left with dissolve
-    show Jean at right with dissolve
+    show Claude at right with dissolve
+    show Jean at left with dissolve
 
     Claude "Never gonna give you up, never gonna let you down, never gonna-"
 
@@ -764,7 +802,9 @@ label decode_success:
 
     Claude "Only one way to find out. Let’s go take a look!"
 
-    hide Claude with moveoutright
+    hide Claude
+    show Claude flip at right
+    hide Claude flip with moveoutright
 
     Jean "Alright, let’s be careful."
 
@@ -792,7 +832,7 @@ label decode_success:
 
     scene bg tanks with fade
 
-    show Claude at right with dissolve
+    show Claude flip at right with dissolve
 
     Jean "Claude, where are-"
 
@@ -803,6 +843,9 @@ label decode_success:
     Jean "What is this..."
 
     Jean "You don’t think it’s..."
+
+    hide Claude flip
+    show Claude at right
 
     Claude "The five million euros."
 
@@ -824,7 +867,10 @@ label decode_success:
 
     Jean "I’m gonna go take a walk."
 
-    hide Jean with moveoutleft
+    hide Jean
+    show Jean flip at left
+
+    hide Jean flip with moveoutleft
 
     Claude "Mon ami, wait!"
 

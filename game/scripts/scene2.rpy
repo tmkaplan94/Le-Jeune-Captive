@@ -62,8 +62,8 @@ label scene2:
 
     Radiant_Redhead "*sigh*"
 
-    show Ciel at left
-    hide Radiant_Redhead
+    show Ciel flip at left
+    hide Radiant_Redhead flip
 
     Ciel "Jean. Ma moitié. Can you not see I am a bit preoccupied?"
 
@@ -86,7 +86,7 @@ label scene2:
 
     Frustrated_Youth "He must be one of the dogs’ pets! Let’s get him!"
 
-    show Ciel at center with move
+    show Ciel flip at center with move
     show Jean at left with move
 
     Ciel "Get him? And do what?! You mean to beat him? Bruise his pretty little doll face?"
@@ -109,8 +109,8 @@ label scene2:
 
     Jean "Then maybe you sh--"
 
-    show Ciel at left with move
-    show Ciel at center with move
+    show Ciel flip at left with move
+    show Ciel flip at center with move
 
     Jean "oof"
 
@@ -118,8 +118,8 @@ label scene2:
 
     Jean "I did--"
 
-    show Ciel at left with move
-    show Ciel at center with move
+    show Ciel flip at left with move
+    show Ciel flip at center with move
 
     Jean "oof"
 
@@ -130,8 +130,8 @@ label scene2:
 
     Jean "You want me to wh--"
 
-    show Ciel at left with move
-    show Ciel at center with move
+    show Ciel flip at left with move
+    show Ciel flip at center with move
 
     Jean "oof"
 
@@ -140,11 +140,9 @@ label scene2:
     Ciel "Good! Now please, give me a moment to catch up with my friend here."
 
     hide Disgruntled_Worker with dissolve
-    show Jean at right with move
-    show Ciel at left with move
+    show Ciel flip at right with move
 
-    show Jean flip at right with move
-    show Ciel flip at left with move
+    show Ciel at right with move
 
     Ciel "You know, Jean, one day your unwillingness to ever give an inch is going to get you killed. I can’t always be here to protect you, you know."
 
@@ -268,8 +266,9 @@ label scene2:
 
     Jean "Of course. I live to serve."
 
-    show Jean at center with move
-    show Rambunctious_Ragamuffin at right with moveinright
+    show Ciel at center with move
+    show Ciel flip at center
+    show Claude at right with moveinright
 
     Rambunctious_Ragamuffin "huff huff"
 
@@ -304,6 +303,8 @@ label scene2:
 
     Jean "What? You want to go towards the gendarmes? Why?"
 
+    show Ciel at center
+
     Ciel "Because I came here to stand for what I believe in, not run away for it. You two go, but I’m staying."
 
     Jean "You are serious?"
@@ -318,13 +319,18 @@ label scene2:
 
     Jean "Of course I’m coming, you impossible woman! How else will I make sure you stay safe?"
 
+    show Ciel flip at center
+
     Claude "huff huff"
 
     Claude "Coming too…"
 
     Jean "Yes, yes. No one asked you, mon gros. Of course you are coming. Now get your butt moving, and show us the way!"
 
+    show Claude flip at right
     hide Claude with moveoutright
+
+    show Ciel at center
 
     Ciel "Are you sure about this? You can still go."
 
@@ -342,6 +348,7 @@ label scene2:
 
     Jean "Well, for the next hour or so, at least…"
 
+    show Ciel flip at center
     hide Ciel with moveoutright
     hide Jean with moveoutright
 

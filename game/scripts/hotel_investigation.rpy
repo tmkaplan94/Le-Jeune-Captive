@@ -24,9 +24,11 @@ init python:
 label hotel:
     scene HotelLobby with fade
 
-    show Jean at right with dissolve
+    "1 July, 2029 - Hotel de Luxe - Lobby"
 
-    show Ciel_Dress at left with dissolve
+    show Jean flip at right with dissolve
+
+    show Ciel_Dress flip at left with dissolve
 
     Jean "Must we really attend these silly parties? There must be better ways for you to advance your influence across France."
 
@@ -34,7 +36,7 @@ label hotel:
 
     Jean "Perhaps you may be right."
 
-    Ciel "We are at the luxurious hôtel de luxe! If you will not enjoy the people, at least enjoy the food."
+    Ciel "We are at the luxurious Hôtel de Luxe! If you will not enjoy the people, at least enjoy the food."
 
     Jean "The only thing I will enjoy is your presence. And…"
 
@@ -45,6 +47,9 @@ label hotel:
     Ciel "Now come along, they are awaiting our arrival."
 
     Jean "Yes, ma moitié."
+
+    hide Ciel_Dress flip
+    show Ciel_Dress at left
 
     Politician "If it isn't Ciel Rousseau! I haven't seen you in so long."
 
@@ -58,7 +63,13 @@ label hotel:
 
     Jean "You are quite the popular figure. I will give you a chance to catch up with them and get something to drink."
 
+    hide Ciel_Dress
+    show Ciel_Dress flip at left
+
     Ciel "You are too kind. I won't be too long, my love. I will see you soon."
+
+    hide Ciel_Dress flip
+    show Ciel_Dress at left
 
     hide Ciel_Dress with moveoutleft
 
@@ -66,7 +77,7 @@ label hotel:
 
     Jean "Now to grab myself a drink."
 
-    show Gaston at left with moveinleft
+    show Gaston at left with dissolve
 
     question_marks "They always make me do these things..."
 
@@ -98,7 +109,7 @@ label hotel_backToCiel:
 
     hide Gaston with dissolve
 
-    show Ciel_Dress at left with moveinleft
+    show Ciel_Dress flip at left with moveinleft
 
     Ciel "Jean!"
 
@@ -119,6 +130,9 @@ label hotel_backToCiel:
     Jean "And I without you. I will see you again shortly."
 
     Ciel "Farewell, I will see you soon."
+
+    hide Ciel_Dress flip
+    show Ciel_Dress at left
 
     hide Ciel_Dress with moveoutleft
 
@@ -158,7 +172,9 @@ label hotel_phoneCall:
 
     Jean "I cannot even bear to comprehend the outrageousness of what I've just heard. His hotel room may give me some answers."
 
-    hide Jean with moveoutleft
+    hide Jean
+    show Jean flip at right
+    hide Jean flip with moveoutleft
 
     jump hotel_hallway
 
@@ -166,7 +182,7 @@ label hotel_hallway:
 
     scene HotelHallway with fade
 
-    show Jean at right with moveinright
+    show Jean flip at right with moveinright
 
     Jean "Now to look for Gaston's room."
 
@@ -188,7 +204,7 @@ label hotel_hallway:
 
     Jean "Claude… What do you think you are doing here?"
 
-    show Claude at left with dissolve
+    show Claude flip at left with dissolve
 
     Claude "Oh, I forgot my room key! I am just trying to get back in."
 
@@ -222,7 +238,9 @@ label hotel_room:
     # And then the pngs that will placed on it will be numbered in my image folder
 
     show Claude at left with moveinright
-    show Jean at right with moveinright
+    hide Claude
+    show Claude flip at left
+    show Jean flip at right with moveinright
 
     Claude "This room is a pigsty!"
 
@@ -346,8 +364,8 @@ label hotel_roomEnd:
 
     scene HotelRoomMap with fade
 
-    show Claude at left with dissolve
-    show Jean at right with dissolve
+    show Claude flip at left with dissolve
+    show Jean flip at right with dissolve
 
     Claude "I can't believe this! Who are these people? Are they trying to control Ciel?"
 
@@ -369,6 +387,8 @@ label hotel_roomEnd:
 
     Jean "I'll leave first."
 
+    hide Jean flip
+    show Jean at right
     hide Jean with moveoutright
 
     jump hotel_lobby
@@ -377,8 +397,8 @@ label hotel_lobby:
 
     scene HotelLobby with fade
 
-    show Ciel_Dress at left with dissolve
-    show Jean at right with moveinright
+    show Ciel_Dress flip at left with dissolve
+    show Jean flip at right with moveinright
 
     Ciel "Ma moitié! I have been looking all over for you."
 

@@ -35,6 +35,15 @@ label scene1:
 
     Jean "Two."
 
+    menu:
+        "Do it now.":
+            jump set_now
+
+        "Wait until three.":
+            jump on_three
+
+label set_now:
+
     "*crack*"
 
     Worried_Protester "Ah-- Merde!"
@@ -51,6 +60,28 @@ label scene1:
 
     Worried_Protester "NO! No. Fine, have it your way. Can I go now?"
 
+    jump after_set
+
+label on_three:
+
+    Jean "Three."
+
+    "*crack*"
+
+    Worried_Protester "Ah-- Merde!"
+
+    Worried_Protester "Huff Huff"
+
+    Worried_Protester "Merde! That really hurts, you know! Do you need to do it so quickly?"
+
+    Jean "I promise you, it hurts much more to do it slowly. You would be crying, not cursing."
+
+    Worried_Protester "Fine, fine. Can I go now?"
+
+    jump after_set
+
+label after_set:
+
     Jean "Please do. We need your stool. Here, take some ice, keep it pressed close, and make sure not to fall off any more telephone poles."
 
     Worried_Protester "Lamp pole. It was a lamp po--"
@@ -59,7 +90,7 @@ label scene1:
 
     Worried_Protester "Fine, fin-- Wha!"
 
-    show Dehydrated_Protester at left with moveinleft
+    show Dehydrated_Protester at right with moveinright
     show Worried_Protester at center with move
 
     Dehydrated_Protester "Hey Jean, I...I don’t feel s--"
@@ -140,6 +171,9 @@ label scene1:
 
     Dehydrated_Protester "Broken lamp--"
 
+    hide Jean
+    show Jean flip at left
+
     Jean "Don’t even ask about it. There is more than enough stupidity to go around today."
 
     Dehydrated_Protester "Hey! Where you runnin’ off to? Aren’t you the nurse here?"
@@ -152,7 +186,7 @@ label scene1:
 
     Dehydrated_Protester "What? Hey! Hey!"
 
-    hide Jean with moveoutright
+    hide Jean flip with moveoutleft
 
     Dehydrated_Protester "Putain! I knew I should have stayed home. This always happens to me."
 

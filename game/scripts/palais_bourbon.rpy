@@ -11,6 +11,9 @@ screen ciel_office():
 
 label palais_bourbon:
     scene palais bourbon outside with fade
+
+    "3 May, 2029 - Palais Bourbon - Outside"
+
     show Jean at left with dissolve
 
     Jean "(... Doesn’t seem like anybody else is around.)"
@@ -392,11 +395,14 @@ label palaisb_end:
 
         Jean "(... Alright, got it. Time to leave.)"
 
+        hide Jean flip
+        show Jean at right
+
         hide Jean with moveoutright
 
         scene palais bourbon outside with fade
 
-        show Jean with moveinright
+        show Jean flip with moveinright
 
         Jean "(That felt… almost too easy. It’s almost like Ciel wanted me to find it.)"
 

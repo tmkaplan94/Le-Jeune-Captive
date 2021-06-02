@@ -4,7 +4,7 @@
 
 label ending:
 
-    scene bg LeGrandRoi sidewalk with None
+    scene bg LeGrandRoi sidewalk with fade
 
     "Walking to Le Grand Roi theatre."
 

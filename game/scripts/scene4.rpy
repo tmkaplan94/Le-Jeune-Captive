@@ -7,7 +7,9 @@ label scene4:
 
     "17 March, 2019 - The Safehouse"
 
-    Newscaster "--the violence on the streets of the Champs-Elysées has reportedly left over 500 protestors and 15 military personnel injured. Eye witnesses report a few scattered fatalities, but authorities have yet to corroborate those reports. The President’s office did not reply to a request for comment."
+    Newscaster "--the violence on the streets of the Champs-Elysées has reportedly left over 500 protestors and 15 military personnel injured."
+
+    Newscaster "Eye witnesses report a few scattered fatalities, but authorities have yet to corroborate those reports. The President’s office did not reply to a request for comment."
 
     Newscaster "A curfew is now in effect on the streets of Paris between the hours of 19:00 and 4:00. We go now to footage of President Macron’s address to the nation, which he gave last night after sending in--"
 
@@ -76,15 +78,24 @@ label scene4:
 
     Claude "YEAH, YEAH, I’M COMING!"
 
+    hide Jean
+    show Jean flip at center
     show Claude at left with move
     show Young_Parisian_Lieutenant at left with moveinleft
-    show Claude at right with move
+    hide Claude
+    show Claude flip at left
+    show Claude flip at right with move
+    hide Claude flip
+    show Claude at right
 
     Young_Parisian_Lieutenant "*huff huff*"
 
     Young_Parisian_Lieutenant "Claude! Jean! Thank god I found…*huff huff*"
 
     Claude "Hey, hey, hey. Take a breath, yeah? You look as bad as he does."
+
+    hide Jean flip
+    show Jean at center
 
     Jean "Casse-toi. I’m fine."
 
@@ -93,6 +104,9 @@ label scene4:
     Jean "Alright, alrigh--"
 
     Young_Parisian_Lieutenant "*huff huff* I found her!"
+
+    hide Jean
+    show Jean flip at center
 
     Claude "You did?"
 
@@ -121,6 +135,9 @@ label scene4:
     Young_Parisian_Lieutenant "...Not good, Jean. It looks like they beat her pretty badly. She wasn’t conscious."
 
     Claude "Sweet god…"
+
+    hide Jean flip
+    show Jean at center
 
     Jean "C'est des conneries! Come, Claude. We have to go!"
 
@@ -156,9 +173,15 @@ label scene4:
 
     Young_Parisian_Lieutenant "So what do we do, Jean?"
 
+    hide Jean
+    show Jean flip at center
+
     Jean "...I do not like it, but we cannot move yet. We need to regroup, and we need a plan."
 
     Claude "What sort of plan?"
+
+    hide Jean flip
+    show Jean at center
 
     Jean "I...don’t know yet. I can’t think. Every time I try to, I just see her there…"
 
@@ -224,7 +247,7 @@ label scene4:
         Jean "If it is, it is only because you dragged it there. Now, get me some water while I figure out where to start…"
 
     label storytime_end:
-        # nice
+        jump scene5
 
 ##################################################
 # End Scene
