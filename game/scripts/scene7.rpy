@@ -5,7 +5,7 @@ label scene7:
 
     scene bg safehouse with fade
     "17 March, 2019 - The Safehouse"
-    
+
     show Young_Parisian_Lieutenant flip at left
     show Jean at center
     show Claude at right
@@ -414,12 +414,9 @@ label get_bent:
 
     Jean "Nothing. Nothing. Let’s go. We have a lot of work to do."
 
-    hide Jean with dissolve
-    hide Claude with dissolve
-
 ##################################################
 # End Scene
 ##################################################
-    jump palais_bourbon
+    jump scene8
 
 return

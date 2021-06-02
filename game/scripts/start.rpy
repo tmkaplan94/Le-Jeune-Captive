@@ -144,6 +144,9 @@ label scene_select:
         "Scene 7: Revolution Sans Revolution":
             jump scene7
 
+        "Scene 8: A Hollow Victory":
+            jump scene8
+
         "Investigations":
             jump investigations
 
