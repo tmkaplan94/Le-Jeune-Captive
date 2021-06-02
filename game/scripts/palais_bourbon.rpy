@@ -220,6 +220,8 @@ label palaisb_coffice:
 
     Jean "(Here we are. Now… where to look?)"
 
+    "Use your cursor to find clues around the room."
+
     init python:
         desk = False
         painting = False
