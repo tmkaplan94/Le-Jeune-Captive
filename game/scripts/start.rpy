@@ -116,12 +116,27 @@ label start:
 
     scene bg start Paris
 
+    play music "music_wow.mp3" fadeout 1.0 fadein 1.0 loop
+
     "Le Jeune Captive"
 
 label scene_select:
 
     menu:
         "Scene Selection"
+
+        "2019 - Prelude":
+            jump scenes
+
+        "2029 - Investigations":
+            jump investigations
+
+        "2029 - Ending":
+            jump ending
+
+label scenes:
+    menu:
+        "Scenes"
 
         "Scene 1: First Aid":
             jump scene1
@@ -147,13 +162,6 @@ label scene_select:
         "Scene 8: A Hollow Victory":
             jump scene8
 
-        "Investigations":
-            jump investigations
-
-        "Ending":
-            jump ending
-
-
 label investigations:
 
     menu:
@@ -165,7 +173,7 @@ label investigations:
         "Tresor Nationale Investigation":
             jump tresor_nationale
 
-        "Hotel Investigation":
+        "Hotel de Luxe Investigation":
             jump hotel
 
         "Saint-Denis Election Investigation":
