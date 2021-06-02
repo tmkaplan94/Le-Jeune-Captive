@@ -116,8 +116,6 @@ label start:
 
     scene bg start Paris
 
-    play music "music_wow.mp3" fadeout 1.0 fadein 1.0 loop
-
     "Le Jeune Captive"
 
 label scene_select:
